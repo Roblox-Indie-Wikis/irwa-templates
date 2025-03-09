@@ -48,7 +48,14 @@ async function updateTemplateOnWiki(wiki: Wiki) {
     console.log(
       "Updating " + template.pageName + " on wiki " + wiki.apiUrl + "..."
     );
-    await bot.save(template.pageName, content, editSummary);
+
+    await bot.edit(template.pageName, () => {
+      return {
+        text: content,
+        summary: editSummary,
+        bot: true,
+      };
+    });
   });
 }
 
