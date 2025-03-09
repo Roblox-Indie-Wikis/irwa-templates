@@ -24,8 +24,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
   const accessToken = process.env[wiki.accessToken];
 
   if (!accessToken) {
-    console.warn("Failed to find access token for wiki " + wiki.apiUrl + "!");
-    return;
+    throw new Error(`Failed to find access token for wiki ${wiki.apiUrl}!`);
   }
 
   const bot = await Mwn.init({
