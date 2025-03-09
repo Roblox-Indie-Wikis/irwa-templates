@@ -4,7 +4,7 @@ import * as fs from "fs";
 
 dotenv.config();
 
-const commitMessage = process.env.COMMIT_MESSAGE ?? "Update template";
+const commitMessage = "Update templates"; //process.env.COMMIT_MESSAGE ?? "Update template";
 const commitAuthorName = process.env.COMMIT_AUTHOR_NAME;
 
 type Wiki = {
