@@ -1,0 +1,24 @@
+name: Deploy Templates
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy-templates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm ci
+      - name: Run bot
+        run: npx tsx bot.ts
+        env:
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+          COMMIT_AUTHOR_NAME: ${{ github.event.head_commit.author.name }}
+          MIRAHEZE_ACCESS_TOKEN: ${{ secrets.MIRAHEZE_ACCESS_TOKEN }}

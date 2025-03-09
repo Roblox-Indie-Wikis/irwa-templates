@@ -1,0 +1,42 @@
+@media screen and (width >= 600px) {
+  .irwa-navigation {
+    display: flex;
+  }
+}
+
+.irwa-navigation {
+  background-image: url("https://static.wikitide.net/urbanshadewiki/d/d1/IRWA_Logo.svg");
+  background-size: contain;
+  background-position: 5px;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  border-radius: 20px;
+  max-width: 55em;
+  margin: auto;
+  padding: 5px;
+}
+
+.irwa-header p {
+  text-align: center;
+  font-weight: bold;
+  margin: 1em 0 0;
+  padding: 0 1em;
+}
+
+.irwa-title {
+  font-size: 1.75em;
+}
+
+.irwa-members {
+  border: 2px solid;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.irwa-member {
+  min-width: 13em;
+}

@@ -1,0 +1,45 @@
+name: Lint
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  checks: write
+  contents: write
+
+jobs:
+  stylelint:
+    permissions:
+      contents: write
+      pull-requests: write
+      repository-projects: write
+    name: Lint styles
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint styles
+        run: npx stylelint "**/*.css"
+  tsc:
+    name: Lint TS files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint scripts
+        run: npx eslint .

@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mwn": "^2.0.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "eslint": "^9.21.0",
+    "stylelint": "^16.15.0",
+    "stylelint-config-standard": "^37.0.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.25.0"
+  }
+}
