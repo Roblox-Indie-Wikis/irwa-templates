@@ -17,8 +17,8 @@ type Template = {
   pageName: string;
 };
 
-const wikis: Wiki[] = require("./data/wikis.json");
-const templates: Template[] = require("./data/templates.json");
+import wikis from "./data/wikis.json";
+import templates from "./data/templates.json";
 
 async function updateTemplateOnWiki(wiki: Wiki) {
   const accessToken = process.env[wiki.accessToken];
