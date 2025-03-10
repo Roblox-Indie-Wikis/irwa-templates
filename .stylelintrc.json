@@ -2,6 +2,7 @@
   "extends": "stylelint-config-standard",
   "rules": {
     "color-function-notation": "legacy",
-    "alpha-value-notation": "number"
+    "alpha-value-notation": "number",
+    "no-descending-specificity": null
   }
 }
