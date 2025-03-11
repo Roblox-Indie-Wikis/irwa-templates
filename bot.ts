@@ -45,11 +45,15 @@ async function updateTemplateOnWiki(wiki: Wiki) {
       editSummary += " (" + commitAuthorName + ")";
     }
 
-    console.log(
-      "Updating " + template.pageName + " on wiki " + wiki.apiUrl + "..."
-    );
+    await bot.edit(template.pageName, (rev) => {
+      if (rev.content === content) {
+        console.log(
+          `Template ${template.pageName} on wiki ${wiki.apiUrl} is up to date!`
+        );
+        return;
+      }
 
-    await bot.edit(template.pageName, () => {
+      console.log(`Updating ${template.pageName} on wiki ${wiki.apiUrl}...`);
       return {
         text: content,
         summary: editSummary,
