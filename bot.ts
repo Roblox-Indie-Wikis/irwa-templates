@@ -46,7 +46,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
     }
 
     await bot.edit(template.pageName, (rev) => {
-      if (rev.content === content) {
+      if (rev.content.trim() === content.trim()) {
         console.log(
           `Template ${template.pageName} on wiki ${wiki.apiUrl} is up to date!`
         );
