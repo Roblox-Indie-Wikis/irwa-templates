@@ -1,6 +1,6 @@
 {{#if: {{{CustomStyling|}}}
   {{#tag:templatestyles||src={{{CustomStyling}}}}}
-| {{#tag:templatestyles||src={{FULLPAGENAME}}/styles.css}}
+| {{#tag:templatestyles||src=Template:IRWA/styles.css}}
 }} <!-- Will have to change the src's on the repo to the actual intended template locations -->
 <div class="irwa-navigation {{#ifeq: {{{ExcludeNoInvert|}}} | true | | mw-no-invert }} {{#if: {{{CustomStyling|}}} | | irwa-conf-{{{Configuration|horizontal}}} irwa-color-{{{Colorization|adaptive}}} }}">
 <div class="irwa-header">
