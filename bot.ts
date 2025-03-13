@@ -11,6 +11,7 @@ const commitAuthorName = process.env.COMMIT_AUTHOR_NAME;
 type Wiki = {
   apiUrl: string;
   accessToken: string;
+  allianceLogoUrl: string | undefined;
 };
 
 type Template = {
@@ -55,6 +56,14 @@ async function updateTemplateOnWiki(wiki: Wiki) {
     let editSummary = commitMessage;
     if (commitAuthorName) {
       editSummary += " (" + commitAuthorName + ")";
+    }
+
+    if (wiki.allianceLogoUrl) {
+      // replace url on 3rd party wikis
+      content.replace(
+        "https://static.wikitide.net/urbanshadewiki/d/d1/IRWA_Logo.svg",
+        wiki.allianceLogoUrl
+      );
     }
 
     await bot.edit(template.pageName, (rev) => {
