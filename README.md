@@ -2,21 +2,21 @@
 
 This repo provides and deploys shared templates on member wikis of the Independent Roblox Wiki Alliance.
 
-## Setup for Miraheze wikis
+## Adding the bot to your wiki
 
-1. Grant the bot account (IRWABot) the `bot` user group.
-(TODO)
+> [!IMPORTANT
+> Your wiki must be a part of the Indie Roblox Wiki Alliance (IRWA) for it to be added to the bot.
 
-## Setup for 3rd-party-wikis
+To request the addition of the bot to your wiki, please [open an issue](https://github.com/Roblox-Indie-Wikis/irwa-templates/issues) using the *Add wiki* issue form. A bureaucrat is required to approve the process before the issue will be handled.
 
-Requirements:
-* https://www.mediawiki.org/wiki/Extension:OAuth
+## What the bot does
 
-(TODO)
+The bot will
 
-### Bot permissions
+* create 1 template page (Template:IRWA)
+* create 1 template css page (Template:IRWA/styles.css)
+* upload 7 wiki logos (see `templates/img` folder)
 
-![A screenshot of Special:OAuthConsumerRegistration showing the rights required by the bot.](assets/img/bot_rights.png)
+and keep these updated based on changes in the repo.
 
-* Edit existing pages
-* Create, edit and move pages
+Note that these numbers will increase with future changes regarding the alliance.

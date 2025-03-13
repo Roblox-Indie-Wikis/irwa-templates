@@ -1,0 +1,37 @@
+# Technical Documentation
+
+> [!WARNING]
+> This documentation is only for contributors. Please refer to [README.md](README.md) for information on the bot.
+
+## Setup for Miraheze wikis
+
+Requirements:
+* The *TemplateStyles* and *ParserFunctions* extensions need to be enabled.
+
+1. Grant the bot account (IRWABot) the `bot` user group.
+    a. If the bot account is not present on the wiki, please ping @abaddriverlol on the discord server.
+2. Add the wiki to `wikis.json` with the access token being set to `MIRAHEZE_ACCESS_TOKEN`.
+
+## Setup for 3rd-party-wikis
+
+Requirements:
+* https://www.mediawiki.org/wiki/Extension:ParserFunctions
+* https://www.mediawiki.org/wiki/Extension:TemplateStyles
+* https://www.mediawiki.org/wiki/Extension:OAuth
+
+1. Create a bot account on your wiki, give it the confirmed user group and log in with it.
+2. Go to *Special:OAuthConsumerRegistration* on your wiki.
+3. Click "Request a token for a new OAuth 2.0 client.".
+4. Enter the following into the form:
+    a. Application name: `Independent Roblox Wiki Alliance Bot`
+    b. Consumer version: `1.0`
+    c. Application description: `Bot used for synchronizing templates across multiple wikis that are part of the of the Roblox Wiki Alliance.`
+    d. Check `This consumer is for use only by <bot username>.`
+    e. Make sure `Client is confidential` is checked.
+    f. Set `Types of grants being requested` to `Request authorization for specific permissions.`.
+    g. Check the following grants:
+      ![A screenshot of Special:OAuthConsumerRegistration showing the rights required by the bot.](assets/img/bot_rights.png)
+    h. Leave the `Allowed pages for editing` field empty.
+    i. Propose the consumer.
+5. Save the generated access token and add it to the repository secrets.
+6. Add the wiki to wikis.json and specify to the access token secret you added in step 5.
