@@ -81,7 +81,7 @@ html.skin-theme-clientpref-night .irwa-color-adaptive.irwa-navigation {
 .irwa-color-dark .irwa-header a,
 html.skin-theme-clientpref-night .irwa-color-adaptive .irwa-header a {
   background-color: rgba(0, 0, 0, 0.8);
-  border-color: #242231 !important;
+  border-color: #242231;
 }
 
 .irwa-color-dark .irwa-header a:hover,
@@ -94,6 +94,14 @@ html.skin-theme-clientpref-night .irwa-color-adaptive .irwa-header a:active {
   background-color: #242231;
 }
 
-.irwa-member.invert-member-icon img {
+.irwa-color-dark .irwa-members {
+  background-color: #191c21;
+}
+
+.irwa-color-light .irwa-member.invert-member-icon img {
+  filter: invert(1);
+}
+
+.irwa-color-dark .irwa-member.invert-member-icon-dark img {
   filter: invert(1);
 }
