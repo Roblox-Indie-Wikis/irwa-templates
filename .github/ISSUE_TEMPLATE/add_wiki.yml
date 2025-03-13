@@ -1,0 +1,29 @@
+name: Add wiki
+description: Add a wiki that is part of the IRWA to the bot.
+title: "[Add Wiki]: <wiki name>"
+labels: ["wikis"]
+projects: ["Roblox-Indie-Wikis/2"]
+assignees:
+  - SomeMWDev
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome! Please only request wikis to be added that are part of the Indie Roblox Wiki Alliance (IRWA).
+  - type: input
+    id: wiki_url
+    attributes:
+      label: Wiki URL
+      description: The url of the main page of the wiki.
+      placeholder: ex. mycoolwiki.org
+    validations:
+      required: true
+  - type: dropdown
+    id: miraheze
+    attributes:
+      label: Where is the wiki hosted?
+      options:
+        - Miraheze
+        - Other
+    validations:
+      required: true
