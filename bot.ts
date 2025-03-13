@@ -1,6 +1,7 @@
 import { Mwn } from "mwn";
 import * as dotenv from "dotenv";
 import * as fs from "fs";
+import * as crypto from "crypto";
 
 dotenv.config();
 
@@ -17,8 +18,19 @@ type Template = {
   pageName: string;
 };
 
+type File = {
+  filePath: string;
+  wikiFileName: string;
+  fileHash: string | undefined;
+};
+
 import wikis from "./data/wikis.json";
 import templates from "./data/templates.json";
+import files from "./data/files.json";
+
+files.forEach(async (file: File) => {
+  file.fileHash = computeLocalSHA1(file.filePath);
+});
 
 async function updateTemplateOnWiki(wiki: Wiki) {
   const accessToken = process.env[wiki.accessToken];
@@ -61,6 +73,33 @@ async function updateTemplateOnWiki(wiki: Wiki) {
       };
     });
   });
+
+  files.forEach(async (file: File) => {
+    const response = await bot.request({
+      action: "query",
+      prop: "imageinfo",
+      titles: file.wikiFileName,
+      iiprop: "sha1",
+      format: "json",
+    });
+
+    const imageInfo = Object.values(response.query.pages)[0] as any;
+
+    if (!imageInfo.missing && imageInfo[0].sha1 == file.fileHash) {
+      console.log(
+        `File ${file.wikiFileName} on wiki ${wiki.apiUrl} is up to date!`
+      );
+      return;
+    }
+
+    console.log(`Updating file ${file.wikiFileName} on wiki ${wiki.apiUrl}...`);
+    await bot.upload(file.filePath, file.wikiFileName, "Update file");
+  });
+}
+
+function computeLocalSHA1(filepath: string): string {
+  const fileBuffer = fs.readFileSync(filepath);
+  return crypto.createHash("sha1").update(fileBuffer).digest("hex");
 }
 
 wikis.forEach(async (wiki: Wiki) => {
