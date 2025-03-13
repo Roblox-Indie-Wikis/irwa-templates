@@ -11,7 +11,7 @@ const commitAuthorName = process.env.COMMIT_AUTHOR_NAME;
 type Wiki = {
   apiUrl: string;
   accessToken: string;
-  allianceLogoUrl: string | undefined;
+  allianceLogoUrl?: string;
 };
 
 type Template = {
@@ -22,16 +22,20 @@ type Template = {
 type File = {
   filePath: string;
   wikiFileName: string;
-  fileHash: string | undefined;
+  fileHash?: string;
 };
 
-import wikis from "./data/wikis.json";
-import templates from "./data/templates.json";
-import files from "./data/files.json";
+import wikisData from "./data/wikis.json";
+import templatesData from "./data/templates.json";
+import filesData from "./data/files.json";
 
-files.forEach(async (file: File) => {
+const wikis: Wiki[] = wikisData;
+const templates: Template[] = templatesData;
+const files: File[] = filesData;
+
+for (const file of files) {
   file.fileHash = computeLocalSHA1(file.filePath);
-});
+}
 
 async function updateTemplateOnWiki(wiki: Wiki) {
   const accessToken = process.env[wiki.accessToken];
@@ -50,8 +54,8 @@ async function updateTemplateOnWiki(wiki: Wiki) {
     },
   });
 
-  templates.forEach(async (template: Template) => {
-    const content = fs.readFileSync(template.filePath, "utf-8");
+  for (const template of templates) {
+    let content = fs.readFileSync(template.filePath, "utf-8");
 
     let editSummary = commitMessage;
     if (commitAuthorName) {
@@ -60,13 +64,13 @@ async function updateTemplateOnWiki(wiki: Wiki) {
 
     if (wiki.allianceLogoUrl) {
       // replace url on 3rd party wikis
-      content.replace(
+      content = content.replace(
         "https://static.wikitide.net/urbanshadewiki/d/d1/IRWA_Logo.svg",
         wiki.allianceLogoUrl
       );
     }
 
-    await bot.edit(template.pageName, (rev) => {
+    await bot.edit(template.pageName, async (rev) => {
       if (rev.content.trim() === content.trim()) {
         console.log(
           `Template ${template.pageName} on wiki ${wiki.apiUrl} is up to date!`
@@ -81,9 +85,9 @@ async function updateTemplateOnWiki(wiki: Wiki) {
         bot: true,
       };
     });
-  });
+  }
 
-  files.forEach(async (file: File) => {
+  for (const file of files) {
     const response = await bot.request({
       action: "query",
       prop: "imageinfo",
@@ -104,12 +108,12 @@ async function updateTemplateOnWiki(wiki: Wiki) {
       console.log(
         `File ${file.wikiFileName} on wiki ${wiki.apiUrl} is up to date!`
       );
-      return;
+      continue;
     }
 
     console.log(`Updating file ${file.wikiFileName} on wiki ${wiki.apiUrl}...`);
     await bot.upload(file.filePath, file.wikiFileName, "Update file");
-  });
+  }
 }
 
 function computeLocalSHA1(filepath: string): string {
@@ -117,6 +121,14 @@ function computeLocalSHA1(filepath: string): string {
   return crypto.createHash("sha1").update(fileBuffer).digest("hex");
 }
 
-wikis.forEach(async (wiki: Wiki) => {
-  updateTemplateOnWiki(wiki);
-});
+(async () => {
+  await Promise.all(
+    wikis.map(async (wiki) => {
+      try {
+        await updateTemplateOnWiki(wiki);
+      } catch (error) {
+        console.error(`Error updating ${wiki.apiUrl}:`, error);
+      }
+    })
+  );
+})();

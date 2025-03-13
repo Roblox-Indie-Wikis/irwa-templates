@@ -34,4 +34,4 @@ Requirements:
     8. Leave the `Allowed pages for editing` field empty.
     9. Propose the consumer.
 5. Save the generated access token and add it to the repository secrets.
-6. Add the wiki to wikis.json and specify to the access token secret you added in step 5.
+6. Add the wiki to `wikis.json` and specify to the access token secret you added in step 5.
