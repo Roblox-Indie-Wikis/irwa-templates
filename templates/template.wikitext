@@ -8,13 +8,13 @@
 [https://indierobloxwikis.org/?utm_source={{urlencode:{{SITENAME}}}}&utm_medium=Wiki&utm_campaign={{FULLPAGENAME}} Learn More]
 </div>
 <div class="irwa-members">
-<div class="irwa-member">[[File:Placeholder.png|class=hybrid-cafe-logo  mw-no-invert|20px]] [https://hybridcafe.wiki Hybrid Cafe]</div>
-<div class="irwa-member">[[File:Placeholder.png|class=irwa-member-logo  mw-no-invert|20px]] [https://urbanshade.org Pressure ]</div>
-<div class="irwa-member">[[File:Placeholder.png|class=irwa-member-logo  mw-no-invert|20px]] [https://utg.miraheze.org Untitled Tag Game]</div>
-<div class="irwa-member">[[File:Placeholder.png|class=irwa-member-logo  mw-no-invert|20px]] [https://gbp.miraheze.org Guts & Blackpower]</div>
-<div class="irwa-member">[[File:Placeholder.png|class=irwa-member-logo  mw-no-invert|20px]] [https://outlaster.miraheze.org Outlaster]</div>
-<div class="irwa-member">[[File:Placeholder.png|class=irwa-member-logo  mw-no-invert|20px]] [https://fischipedia.org Fischipedia]</div>
-<div class="irwa-member">[[File:Placeholder.png|class=irwa-member-logo  mw-no-invert|20px]] [https://dovedale.wiki Dovedale Railway]</div>
+<div class="irwa-member">[[File:HybridCafeWikiLogo.svg|class=hybrid-cafe-logo  mw-no-invert|20px]] [https://hybridcafe.wiki Hybrid Cafe]</div>
+<div class="irwa-member invert-member-icon">[[File:PressureWikiLogo.png|class=irwa-member-logo  mw-no-invert|20px]] [https://urbanshade.org Pressure ]</div>
+<div class="irwa-member">[[File:UTGWikiLogo.png|class=irwa-member-logo  mw-no-invert|20px]] [https://utg.miraheze.org Untitled Tag Game]</div>
+<div class="irwa-member">[[File:GBPWikiLogo.webp|class=irwa-member-logo  mw-no-invert|20px]] [https://gbp.miraheze.org Guts & Blackpower]</div>
+<div class="irwa-member">[[File:OutlasterWikiLogo.webp|class=irwa-member-logo  mw-no-invert|20px]] [https://outlaster.miraheze.org Outlaster]</div>
+<div class="irwa-member">[[File:FischWikiLogo.png|class=irwa-member-logo  mw-no-invert|20px]] [https://fischipedia.org Fischipedia]</div>
+<div class="irwa-member">[[File:DovedaleWikiLogo.webp|class=irwa-member-logo  mw-no-invert|20px]] [https://dovedale.wiki Dovedale Railway]</div>
 <!--
 <div class="irwa-member">[[File:Placeholder.png|class=irwa-member-logo  mw-no-invert|20px]] [[mh:meta|Wiki name]]</div>
 <div class="irwa-member">[[File:Placeholder.png|class=irwa-member-logo  mw-no-invert|20px]] [[mh:meta|Idek Wiki name]]</div>

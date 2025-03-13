@@ -93,3 +93,7 @@ html.skin-theme-clientpref-night .irwa-color-adaptive .irwa-header a:hover {
 html.skin-theme-clientpref-night .irwa-color-adaptive .irwa-header a:active {
   background-color: #242231;
 }
+
+.irwa-member.invert-member-icon img {
+  filter: invert(1);
+}

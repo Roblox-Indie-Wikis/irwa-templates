@@ -1,6 +1,30 @@
 [
   {
+    "filePath": "templates/img/DovedaleWikiLogo.webp",
+    "wikiFileName": "File:DovedaleWikiLogo.webp"
+  },
+  {
+    "filePath": "templates/img/FischWikiLogo.png",
+    "wikiFileName": "File:FischWikiLogo.png"
+  },
+  {
+    "filePath": "templates/img/GBPWikiLogo.webp",
+    "wikiFileName": "File:GBPWikiLogo.webp"
+  },
+  {
+    "filePath": "templates/img/HybridCafeWikiLogo.svg",
+    "wikiFileName": "File:HybridCafeWikiLogo.svg"
+  },
+  {
+    "filePath": "templates/img/OutlasterWikiLogo.webp",
+    "wikiFileName": "File:OutlasterWikiLogo.webp"
+  },
+  {
     "filePath": "templates/img/PressureWikiLogo.png",
     "wikiFileName": "File:PressureWikiLogo.png"
+  },
+  {
+    "filePath": "templates/img/UTGWikiLogo.png",
+    "wikiFileName": "File:UTGWikiLogo.png"
   }
 ]
