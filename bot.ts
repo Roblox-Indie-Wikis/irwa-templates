@@ -83,9 +83,14 @@ async function updateTemplateOnWiki(wiki: Wiki) {
       format: "json",
     });
 
-    const imageInfo = Object.values(response.query.pages)[0] as any;
+    const result = Object.values(response.query.pages)[0] as any;
 
-    if (!imageInfo.missing && imageInfo[0].sha1 == file.fileHash) {
+    if (
+      !result.missing &&
+      result.imageinfo &&
+      result.imageinfo[0] &&
+      result.imageinfo[0].sha1 === file.fileHash
+    ) {
       console.log(
         `File ${file.wikiFileName} on wiki ${wiki.apiUrl} is up to date!`
       );
