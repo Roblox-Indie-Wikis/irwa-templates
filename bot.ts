@@ -92,6 +92,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
       format: "json",
     });
 
+    /* eslint-disable  @typescript-eslint/no-explicit-any */
     const result = Object.values(response.query.pages)[0] as any;
 
     if (
