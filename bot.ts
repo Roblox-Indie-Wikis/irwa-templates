@@ -33,6 +33,8 @@ const wikis: Wiki[] = wikisData;
 const templates: Template[] = templatesData;
 const files: File[] = filesData;
 
+let success = true;
+
 for (const file of files) {
   file.fileHash = computeLocalSHA1(file.filePath);
 }
@@ -41,7 +43,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
   const accessToken = process.env[wiki.accessToken];
 
   if (!accessToken) {
-    throw new Error(`Failed to find access token for wiki ${wiki.apiUrl}!`);
+    throw new Error(`❌ Failed to find access token for wiki ${wiki.apiUrl}!`);
   }
 
   const bot = await Mwn.init({
@@ -70,21 +72,29 @@ async function updateTemplateOnWiki(wiki: Wiki) {
       );
     }
 
-    await bot.edit(template.pageName, async (rev) => {
-      if (rev.content.trim() === content.trim()) {
-        console.log(
-          `Template ${template.pageName} on wiki ${wiki.apiUrl} is up to date!`
-        );
-        return;
-      }
-
-      console.log(`Updating ${template.pageName} on wiki ${wiki.apiUrl}...`);
-      return {
-        text: content,
-        summary: editSummary,
-        bot: true,
-      };
-    });
+    try {
+      await bot.edit(template.pageName, async (rev) => {
+        if (rev.content.trim() === content.trim()) {
+          console.log(
+            `✅ Template ${template.pageName} on wiki ${wiki.apiUrl} is up to date!`
+          );
+          return;
+        }
+  
+        console.log(`ℹ️ Updating ${template.pageName} on wiki ${wiki.apiUrl}...`);
+        return {
+          text: content,
+          summary: editSummary,
+          bot: true,
+        };
+      });
+    } catch (error) {
+      success = false;
+      console.error(
+        `❌ Error updating ${template.pageName} on wiki ${wiki.apiUrl}:`,
+        error
+      );
+    }
   }
 
   for (const file of files) {
@@ -106,13 +116,22 @@ async function updateTemplateOnWiki(wiki: Wiki) {
       result.imageinfo[0].sha1 === file.fileHash
     ) {
       console.log(
-        `File ${file.wikiFileName} on wiki ${wiki.apiUrl} is up to date!`
+        `✅ File ${file.wikiFileName} on wiki ${wiki.apiUrl} is up to date!`
       );
       continue;
     }
 
-    console.log(`Updating file ${file.wikiFileName} on wiki ${wiki.apiUrl}...`);
-    await bot.upload(file.filePath, file.wikiFileName, "Update file");
+    console.log(`ℹ️ Updating file ${file.wikiFileName} on wiki ${wiki.apiUrl}...`);
+
+    try {
+      await bot.upload(file.filePath, file.wikiFileName, "Update file");
+    } catch (error) {
+      success = false;
+      console.error(
+        `❌ Error updating file ${file.wikiFileName} on wiki ${wiki.apiUrl}:`,
+        error
+      );
+    }
   }
 }
 
@@ -130,9 +149,17 @@ function delay(ms: number) {
     try {
       await updateTemplateOnWiki(wiki);
     } catch (error) {
-      console.error(`Error updating ${wiki.apiUrl}:`, error);
+      success = false;
+      console.error(`⚠️ Error updating ${wiki.apiUrl}:`, error);
     }
     // wait 1s between each wiki
     await delay(1000);
+  }
+
+  if (success) {
+    console.log("✅ All wikis have been updated successfully!");
+  } else {
+    console.error("⚠️ Some wikis have not been updated successfully!");
+    process.exit(1);
   }
 })();
