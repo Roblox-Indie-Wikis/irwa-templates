@@ -86,6 +86,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
           text: content,
           summary: editSummary,
           bot: true,
+          nocreate: false,
         };
       });
     } catch (error) {
