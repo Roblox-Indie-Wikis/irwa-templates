@@ -1,4 +1,5 @@
-.irwa-color-light {
+.irwa-color-light,
+html.skin-theme-clientpref-day .irwa-color-adaptive {
   --irwa-navigation-background: #e4e6ed;
   --irwa-navigation-color: #000;
   --irwa-header-link-background: rgba(255, 255, 255, 0.8);
@@ -10,7 +11,7 @@
 }
 
 @media screen and (prefers-color-scheme: light) {
-  .irwa-color-adaptive {
+  html.skin-theme-clientpref-os .irwa-color-adaptive {
     --irwa-navigation-background: #e4e6ed;
     --irwa-navigation-color: #000;
     --irwa-header-link-background: rgba(255, 255, 255, 0.8);
@@ -22,7 +23,8 @@
   }
 }
 
-.irwa-color-dark {
+.irwa-color-dark,
+html.skin-theme-clientpref-night .irwa-color-adaptive {
   --irwa-navigation-background: #191c21;
   --irwa-navigation-color: #fff;
   --irwa-header-link-background: rgba(0, 0, 0, 0.8);
@@ -34,7 +36,7 @@
 }
 
 @media screen and (prefers-color-scheme: dark) {
-  .irwa-color-adaptive {
+  html.skin-theme-clientpref-os .irwa-color-adaptive {
     --irwa-navigation-background: #191c21;
     --irwa-navigation-color: #fff;
     --irwa-header-link-background: rgba(0, 0, 0, 0.8);
