@@ -1,8 +1,8 @@
-{{#if: {{{CustomStyling|}}}
-  {{#tag:templatestyles||src={{{CustomStyling}}}}}
+{{#if: {{{custom-stylesheet|}}}
+  {{#tag:templatestyles||src={{{custom-stylesheet}}}}}
 | {{#tag:templatestyles||src=Template:IRWA/styles.css}}
 }}
-<div class="irwa-navigation {{#ifeq: {{{ExcludeNoInvert|}}} | true | | mw-no-invert }} {{#if: {{{CustomStyling|}}} | | irwa-conf-{{{Configuration|horizontal}}} irwa-color-{{{Colorization|adaptive}}} }}">
+<div class="irwa-navigation {{#ifeq: {{{exclude-no-invert|}}} | true | | mw-no-invert }} {{#if: {{{custom-stylesheet|}}} | | irwa-conf-{{{orientation|horizontal}}} irwa-color-{{{theme|adaptive}}} }}">
   <div class="irwa-header">
     <span class="irwa-title">Independent Roblox Wiki Alliance</span><br>
     [https://indierobloxwikis.org/?utm_source={{urlencode:{{SITENAME}}}}&utm_medium=Wiki&utm_campaign={{FULLPAGENAME}} Learn More]
@@ -28,19 +28,19 @@ Instead, [https://github.com/Roblox-Indie-Wikis/irwa-templates/issues open an is
 <templatedata>
 {
 	"params": {
-		"CustomStyling": {
+		"custom-stylesheet": {
 			"label": "Custom Stylesheet",
 			"description": "If this is set, the stylesheet specified in the parameter value will be used for styling the template instead of the default one.",
 			"example": "Template:IRWA/custom.css",
 			"type": "wiki-template-name"
 		},
-		"ExcludeNoInvert": {
+		"exclude-no-invert": {
 			"label": "Exclude no-invert",
 			"description": "If set to true, the mw-no-invert class will be removed from the template.",
 			"example": "true",
 			"type": "boolean"
 		},
-		"Configuration": {
+		"orientation": {
 			"label": "Orientation",
 			"description": "Specifies the orientation of the template.",
 			"type": "line",
@@ -49,7 +49,7 @@ Instead, [https://github.com/Roblox-Indie-Wikis/irwa-templates/issues open an is
 				"vertical"
 			]
 		},
-		"Colorization": {
+		"theme": {
 			"label": "Color Theme",
 			"description": "Specifies the color theme of the template. If set to adaptive, the template will attempt to choose the color theme automatically based on the skin's current color theme.",
 			"type": "line",
