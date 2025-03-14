@@ -1,5 +1,6 @@
 .irwa-color-light,
-html.skin-theme-clientpref-day .irwa-color-adaptive {
+html.skin-theme-clientpref-day .irwa-color-adaptive,
+html.theme-light .irwa-color-adaptive {
   --irwa-navigation-background: #e4e6ed;
   --irwa-navigation-color: #000;
   --irwa-header-link-background: rgba(255, 255, 255, 0.8);
@@ -24,7 +25,8 @@ html.skin-theme-clientpref-day .irwa-color-adaptive {
 }
 
 .irwa-color-dark,
-html.skin-theme-clientpref-night .irwa-color-adaptive {
+html.skin-theme-clientpref-night .irwa-color-adaptive,
+html.theme-dark .irwa-color-adaptive {
   --irwa-navigation-background: #191c21;
   --irwa-navigation-color: #fff;
   --irwa-header-link-background: rgba(0, 0, 0, 0.8);
@@ -124,7 +126,8 @@ html.skin-theme-clientpref-night .irwa-color-adaptive {
 /* Invert some icons in specific colour modes */
 
 .irwa-color-light .irwa-member.invert-member-icon img,
-html.skin-theme-clientpref-day .irwa-color-adaptive .irwa-member.invert-member-icon img {
+html.skin-theme-clientpref-day .irwa-color-adaptive .irwa-member.invert-member-icon img,
+html.theme-light .irwa-color-adaptive .irwa-member.invert-member-icon img {
   filter: invert(1);
 }
 
@@ -135,7 +138,8 @@ html.skin-theme-clientpref-day .irwa-color-adaptive .irwa-member.invert-member-i
 }
 
 .irwa-color-dark .irwa-member.invert-member-icon-dark img,
-html.skin-theme-clientpref-night .irwa-color-adaptive .irwa-member.invert-member-icon-dark img {
+html.skin-theme-clientpref-night .irwa-color-adaptive .irwa-member.invert-member-icon-dark img,
+html.theme-dark .irwa-color-adaptive .irwa-member.invert-member-icon-dark img {
   filter: invert(1);
 }
 
