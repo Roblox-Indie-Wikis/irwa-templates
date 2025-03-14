@@ -2,5 +2,9 @@
   {
     "apiUrl": "https://randomwikistuff.miraheze.org/w/api.php",
     "accessToken": "MIRAHEZE_ACCESS_TOKEN"
+  },
+  {
+    "apiUrl": "https://urbanshade.org/w/api.php",
+    "accessToken": "MIRAHEZE_ACCESS_TOKEN"
   }
 ]
