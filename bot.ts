@@ -28,6 +28,7 @@ type File = {
 import wikisData from "./data/wikis.json";
 import templatesData from "./data/templates.json";
 import filesData from "./data/files.json";
+import { MwnError } from "mwn/build/error";
 
 const wikis: Wiki[] = wikisData;
 const templates: Template[] = templatesData;
@@ -90,6 +91,19 @@ async function updateTemplateOnWiki(wiki: Wiki) {
         };
       });
     } catch (error) {
+      if (error instanceof MwnError.MissingPage) {
+        console.log(`ℹ️ Creating ${template.pageName} on wiki ${wiki.apiUrl}...`);
+        try {
+          await bot.create(template.pageName, content, editSummary);
+        } catch (error) {
+          success = false;
+          console.error(
+            `❌ Error creating ${template.pageName} on wiki ${wiki.apiUrl}:`,
+            error
+          );
+        }
+        continue;
+      }
       success = false;
       console.error(
         `❌ Error updating ${template.pageName} on wiki ${wiki.apiUrl}:`,
