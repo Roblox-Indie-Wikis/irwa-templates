@@ -1,48 +1,67 @@
 {{#if: {{{CustomStyling|}}}
   {{#tag:templatestyles||src={{{CustomStyling}}}}}
 | {{#tag:templatestyles||src=Template:IRWA/styles.css}}
-}} <!-- Will have to change the src's on the repo to the actual intended template locations -->
+}}
 <div class="irwa-navigation {{#ifeq: {{{ExcludeNoInvert|}}} | true | | mw-no-invert }} {{#if: {{{CustomStyling|}}} | | irwa-conf-{{{Configuration|horizontal}}} irwa-color-{{{Colorization|adaptive}}} }}">
-<div class="irwa-header">
-<span class="irwa-title">Independent Roblox Wiki Alliance</span><br>
-[https://indierobloxwikis.org/?utm_source={{urlencode:{{SITENAME}}}}&utm_medium=Wiki&utm_campaign={{FULLPAGENAME}} Learn More]
-</div>
-<div class="irwa-members">
-<div class="irwa-member invert-member-icon-dark">[[File:HybridCafeWikiLogo.svg|class=hybrid-cafe-logo  mw-no-invert|20px]] [https://hybridcafe.wiki Hybrid Cafe]</div>
-<div class="irwa-member invert-member-icon">[[File:PressureWikiLogo.png|class=irwa-member-logo  mw-no-invert|20px]] [https://urbanshade.org Pressure ]</div>
-<div class="irwa-member">[[File:UTGWikiLogo.png|class=irwa-member-logo  mw-no-invert|20px]] [https://utg.miraheze.org Untitled Tag Game]</div>
-<div class="irwa-member">[[File:GBPWikiLogo.webp|class=irwa-member-logo  mw-no-invert|20px]] [https://gbp.miraheze.org Guts & Blackpower]</div>
-<div class="irwa-member">[[File:OutlasterWikiLogo.webp|class=irwa-member-logo  mw-no-invert|20px]] [https://outlaster.miraheze.org Outlaster]</div>
-<div class="irwa-member">[[File:FischWikiLogo.png|class=irwa-member-logo  mw-no-invert|20px]] [https://fischipedia.org Fischipedia]</div>
-<div class="irwa-member">[[File:DovedaleWikiLogo.webp|class=irwa-member-logo  mw-no-invert|20px]] [https://dovedale.wiki Dovedale Railway]</div>
-<!--
-<div class="irwa-member">[[File:Placeholder.png|class=irwa-member-logo  mw-no-invert|20px]] [[mh:meta|Wiki name]]</div>
-<div class="irwa-member">[[File:Placeholder.png|class=irwa-member-logo  mw-no-invert|20px]] [[mh:meta|Idek Wiki name]]</div>
-<div class="irwa-member">[[File:Placeholder.png|class=irwa-member-logo  mw-no-invert|20px]] [[mh:meta|Yeah Wiki name]]</div>
-<div class="irwa-member">[[File:Placeholder.png|class=irwa-member-logo  mw-no-invert|20px]] [[mh:meta|Wiki name]]</div>
--->
-</div>
+  <div class="irwa-header">
+    <span class="irwa-title">Independent Roblox Wiki Alliance</span><br>
+    [https://indierobloxwikis.org/?utm_source={{urlencode:{{SITENAME}}}}&utm_medium=Wiki&utm_campaign={{FULLPAGENAME}} Learn More]
+  </div>
+  <div class="irwa-members">
+    <div class="irwa-member invert-member-icon-dark">[[File:HybridCafeWikiLogo.svg|class=hybrid-cafe-logo  mw-no-invert|20px]] [https://hybridcafe.wiki Hybrid Cafe]</div>
+    <div class="irwa-member invert-member-icon">[[File:PressureWikiLogo.png|class=irwa-member-logo  mw-no-invert|20px]] [https://urbanshade.org Pressure ]</div>
+    <div class="irwa-member">[[File:UTGWikiLogo.png|class=irwa-member-logo  mw-no-invert|20px]] [https://utg.miraheze.org Untitled Tag Game]</div>
+    <div class="irwa-member">[[File:GBPWikiLogo.webp|class=irwa-member-logo  mw-no-invert|20px]] [https://gbp.miraheze.org Guts & Blackpower]</div>
+    <div class="irwa-member">[[File:OutlasterWikiLogo.webp|class=irwa-member-logo  mw-no-invert|20px]] [https://outlaster.miraheze.org Outlaster]</div>
+    <div class="irwa-member">[[File:FischWikiLogo.png|class=irwa-member-logo  mw-no-invert|20px]] [https://fischipedia.org Fischipedia]</div>
+    <div class="irwa-member">[[File:DovedaleWikiLogo.webp|class=irwa-member-logo  mw-no-invert|20px]] [https://dovedale.wiki Dovedale Railway]</div>
+  </div>
 </div>
 <noinclude>
+This template is shared across all members of the [https://indierobloxwikis.org/ Indie Roblox Wiki Alliance] and provides links to all member wikis.
 
+Notes:
+* Please do not edit this template manually! It is automatically updated by a bot and any changes made will be discarded the next time a template update happens.
+Instead, [https://github.com/Roblox-Indie-Wikis/irwa-templates/issues open an issue] at the template's repository.
+* The link contains UTM tracking and will provide the wiki name as well as the current page name to the web page of the alliance.
 
-
-
-
-
-Few notes (not making this into a proper documentation subpage)
-
-There are four parameters:
-* Configuration, the orientation of the template
-** horizontal: Sets the header and links side by side (default, as seen here)
-** vertical: Sets the header on top of the links
-* Colorization, whether it uses a light color scheme, a dark one, or adapts to a dark/light mode switcher
-** adaptive: Changes based on the current mode (default, as seen here)
-** dark: Uses a dark color scheme
-** light: Uses a light color scheme
-* ExcludeNoInvert, if set to true it will remove the <code>mw-no-invert</code> class
-* CustomStyling, if set to true it will load from [[{{FULLPAGENAME}}/custom.css]] instead of the usual [[{{FULLPAGENAME}}/styles.css]] and remove the configuration/colorization classes. Intended to allow wikis to integrate the widget as they see fit
-
-
-Note: The link contains UTM tracking
+<templatedata>
+{
+	"params": {
+		"CustomStyling": {
+			"label": "Custom Stylesheet",
+			"description": "If this is set, the stylesheet specified in the parameter value will be used for styling the template instead of the default one.",
+			"example": "Template:IRWA/custom.css",
+			"type": "wiki-template-name"
+		},
+		"ExcludeNoInvert": {
+			"label": "Exclude no-invert",
+			"description": "If set to true, the mw-no-invert class will be removed from the template.",
+			"example": "true",
+			"type": "boolean"
+		},
+		"Configuration": {
+			"label": "Orientation",
+			"description": "Specifies the orientation of the template.",
+			"type": "line",
+			"suggestedvalues": [
+				"horizontal",
+				"vertical"
+			]
+		},
+		"Colorization": {
+			"label": "Color Theme",
+			"description": "Specifies the color theme of the template. If set to adaptive, the template will attempt to choose the color theme automatically based on the skin's current color theme.",
+			"type": "line",
+			"suggestedvalues": [
+				"adaptive",
+				"dark",
+				"light"
+			],
+			"default": "adaptive"
+		}
+	},
+	"description": "This template provides links to all members wikis of the Indie Roblox Wiki Alliance (IRWA)."
+}
+</templatedata>
 </noinclude>
