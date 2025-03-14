@@ -62,7 +62,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
 
     let editSummary = commitMessage;
     if (commitAuthorName) {
-      editSummary += `(${commitAuthorName})`;
+      editSummary += ` (${commitAuthorName})`;
     }
 
     if (wiki.allianceLogoUrl) {
