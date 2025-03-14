@@ -6,7 +6,7 @@
 ## Setup for Miraheze wikis
 
 Requirements:
-* The *TemplateStyles* and *ParserFunctions* extensions need to be enabled.
+* The *TemplateStyles*, *TemplateStylesExtender* and *ParserFunctions* extensions need to be enabled.
 
 1. Grant the bot account (IRWABot) the `bot` user group.
     a. If the bot account is not present on the wiki, please ping @abaddriverlol on the discord server.
@@ -17,6 +17,7 @@ Requirements:
 Requirements:
 * https://www.mediawiki.org/wiki/Extension:ParserFunctions
 * https://www.mediawiki.org/wiki/Extension:TemplateStyles
+* https://www.mediawiki.org/wiki/Extension:TemplateStylesExtender
 * https://www.mediawiki.org/wiki/Extension:OAuth
 
 1. Create a bot account on your wiki, give it the confirmed user group and log in with it.

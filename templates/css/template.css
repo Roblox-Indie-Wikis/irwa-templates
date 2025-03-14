@@ -1,3 +1,51 @@
+.irwa-color-light {
+  --irwa-navigation-background: #e4e6ed;
+  --irwa-navigation-color: #000;
+  --irwa-header-link-background: rgba(255, 255, 255, 0.8);
+  --irwa-header-link-border-color: #d4d2e1;
+  --irwa-header-link-hover-background: #fff;
+  --irwa-header-link-active-background: #d4d2e1;
+  --irwa-members-background: rgba(255, 255, 255, 0.8);
+  --irwa-members-border-color: #d4d2e1;
+}
+
+@media screen and (prefers-color-scheme: light) {
+  .irwa-color-adaptive {
+    --irwa-navigation-background: #e4e6ed;
+    --irwa-navigation-color: #000;
+    --irwa-header-link-background: rgba(255, 255, 255, 0.8);
+    --irwa-header-link-border-color: #d4d2e1;
+    --irwa-header-link-hover-background: #fff;
+    --irwa-header-link-active-background: #d4d2e1;
+    --irwa-members-background: rgba(255, 255, 255, 0.8);
+    --irwa-members-border-color: #d4d2e1;
+  }
+}
+
+.irwa-color-dark {
+  --irwa-navigation-background: #191c21;
+  --irwa-navigation-color: #fff;
+  --irwa-header-link-background: rgba(0, 0, 0, 0.8);
+  --irwa-header-link-border-color: #242231;
+  --irwa-header-link-hover-background: #000;
+  --irwa-header-link-active-background: #242231;
+  --irwa-members-background: #191c21;
+  --irwa-members-border-color: #333;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .irwa-color-adaptive {
+    --irwa-navigation-background: #191c21;
+    --irwa-navigation-color: #fff;
+    --irwa-header-link-background: rgba(0, 0, 0, 0.8);
+    --irwa-header-link-border-color: #242231;
+    --irwa-header-link-hover-background: #000;
+    --irwa-header-link-active-background: #242231;
+    --irwa-members-background: #191c21;
+    --irwa-members-border-color: #333;
+  }
+}
+
 /* Base Stuff */
 .irwa-navigation {
   background-image: url("https://static.wikitide.net/urbanshadewiki/d/d1/IRWA_Logo.svg");
@@ -9,8 +57,8 @@
   max-width: 55em;
   margin: auto;
   padding: 5px;
-  background-color: #e4e6ed; /* Base light mode colors */
-  color: #000;
+  background-color: var(--irwa-navigation-background);
+  color: var(--irwa-navigation-color);
 }
 
 .irwa-header p {
@@ -28,28 +76,28 @@
   background-image: none !important;
   padding: 2px 10px !important;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.8); /* Base light mode colors */
-  border: 2px solid #d4d2e1;
+  background-color: var(--irwa-header-link-background);
+  border: 2px solid var(--irwa-header-link-border-color);
   border-radius: 6px;
 }
 
 .irwa-header a:hover {
-  background-color: #fff;
+  background-color: var(--irwa-header-link-hover-background);
 }
 
 .irwa-header a:active {
-  background-color: #d4d2e1;
+  background-color: var(--irwa-header-link-active-background);
 }
 
 .irwa-members {
-  border: 2px solid #d4d2e1;
+  border: 2px solid var(--irwa-members-border-color);
   border-radius: 20px;
   margin: 5px;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.8); /* Base light mode colors */
+  background-color: var(--irwa-members-background);
 }
 
 .irwa-member {
@@ -71,37 +119,24 @@
   padding: 0 1em;
 }
 
-/* Darkmode and Adaptive Color - Overrides light colorization where applicable */
-.irwa-color-dark.irwa-navigation,
-html.skin-theme-clientpref-night .irwa-color-adaptive.irwa-navigation {
-  background-color: #191c21;
-  color: #fff;
-}
-
-.irwa-color-dark .irwa-header a,
-html.skin-theme-clientpref-night .irwa-color-adaptive .irwa-header a {
-  background-color: rgba(0, 0, 0, 0.8);
-  border-color: #242231;
-}
-
-.irwa-color-dark .irwa-header a:hover,
-html.skin-theme-clientpref-night .irwa-color-adaptive .irwa-header a:hover {
-  background-color: #000;
-}
-
-.irwa-color-dark .irwa-header a:active,
-html.skin-theme-clientpref-night .irwa-color-adaptive .irwa-header a:active {
-  background-color: #242231;
-}
-
-.irwa-color-dark .irwa-members {
-  background-color: #191c21;
-}
+/* Invert some icons in specific colour modes */
 
 .irwa-color-light .irwa-member.invert-member-icon img {
   filter: invert(1);
 }
 
+@media screen and (prefers-color-scheme: light) {
+  .irwa-color-adaptive .irwa-member.invert-member-icon img {
+    filter: invert(1);
+  }
+}
+
 .irwa-color-dark .irwa-member.invert-member-icon-dark img {
   filter: invert(1);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .irwa-color-adaptive .irwa-member.invert-member-icon-dark img {
+    filter: invert(1);
+  }
 }
