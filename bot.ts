@@ -59,7 +59,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
 
     let editSummary = commitMessage;
     if (commitAuthorName) {
-      editSummary += " (" + commitAuthorName + ")";
+      editSummary += `(${commitAuthorName})`;
     }
 
     if (wiki.allianceLogoUrl) {
@@ -121,14 +121,18 @@ function computeLocalSHA1(filepath: string): string {
   return crypto.createHash("sha1").update(fileBuffer).digest("hex");
 }
 
+function delay(ms: number) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 (async () => {
-  await Promise.all(
-    wikis.map(async (wiki) => {
-      try {
-        await updateTemplateOnWiki(wiki);
-      } catch (error) {
-        console.error(`Error updating ${wiki.apiUrl}:`, error);
-      }
-    })
-  );
+  for (const wiki of wikis) {
+    try {
+      await updateTemplateOnWiki(wiki);
+    } catch (error) {
+      console.error(`Error updating ${wiki.apiUrl}:`, error);
+    }
+    // wait 1s between each wiki
+    await delay(1000);
+  }
 })();
