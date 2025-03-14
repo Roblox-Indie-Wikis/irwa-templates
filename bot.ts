@@ -76,7 +76,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
       await bot.edit(template.pageName, async (rev) => {
         if (rev.content.trim() === content.trim()) {
           console.log(
-            `✅ Template ${template.pageName} on wiki ${wiki.apiUrl} is up to date!`
+            `✅ ${template.pageName} on wiki ${wiki.apiUrl} is up to date!`
           );
           return;
         }
@@ -116,7 +116,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
       result.imageinfo[0].sha1 === file.fileHash
     ) {
       console.log(
-        `✅ File ${file.wikiFileName} on wiki ${wiki.apiUrl} is up to date!`
+        `✅ ${file.wikiFileName} on wiki ${wiki.apiUrl} is up to date!`
       );
       continue;
     }
