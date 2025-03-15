@@ -28,7 +28,7 @@ body:
   - type: checkboxes
     id: captchas
     attributes:
-    label: Before You Submit...
-    description: Just making sure you did actually read the instructions.
+      label: Before You Submit...
+      description: Just making sure you did actually read the instructions.
       options:
         - label: I confirm my wiki that I am submitting is already an existing approved IRWA member. 
