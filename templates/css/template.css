@@ -54,7 +54,7 @@ html.theme-dark .irwa-color-adaptive {
 .irwa-navigation {
   background-image: url("https://static.wikitide.net/urbanshadewiki/d/d1/IRWA_Logo.svg");
   background-size: contain;
-  background-position: center; /* For vertical configuration, justs overriden in horizontal configuration */
+  background-position: center; /* For vertical configuration, is overridden in horizontal configuration */
   background-repeat: no-repeat;
   background-blend-mode: overlay;
   border-radius: 20px;
@@ -69,7 +69,7 @@ html.theme-dark .irwa-color-adaptive {
   text-align: center;
   font-weight: bold;
   margin: 0.5em 0;
-  padding: 0; /* For vertical configuration, justs overriden in horizontal configuration */
+  padding: 0; /* For vertical configuration, is overridden in horizontal configuration */
 }
 
 .irwa-title {
@@ -109,6 +109,7 @@ html.theme-dark .irwa-color-adaptive {
 }
 
 /* Horizontal Configuration - Overrides various vertical configuration stuff */
+
 @media screen and (width >= 600px) {
   .irwa-conf-horizontal.irwa-navigation {
     display: flex;

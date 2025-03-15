@@ -1,6 +1,6 @@
-name: Add wiki
-description: Add a wiki that is part of the IRWA to the bot.
-title: "[Add Wiki]: <wiki name>"
+name: Remove wiki
+description: Remove a wiki from the bot.
+title: "[Remove Wiki]: <wiki name>"
 labels: ["wikis"]
 type: Task
 projects: ["Roblox-Indie-Wikis/2"]
@@ -10,8 +10,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Welcome! Please only request wikis to be added that are part of the Indie Roblox Wiki Alliance (IRWA). To join the alliance, please see [this page](https://indierobloxwikis.org/joining/) for more information.
-        Note that a bureaucrat on the wiki must either submit this request or confirm it for it to be handled.
+        Welcome! Note that a bureaucrat on the wiki must either submit this request or confirm it for it to be handled.
   - type: input
     id: wiki_url
     attributes:
@@ -31,6 +30,5 @@ body:
     id: captchas
     attributes:
       label: Before you submit...
-      description: Just making sure you are actually a member!
       options:
-        - label: I confirm my wiki that I am submitting is already an existing approved IRWA member.
+        - label: I confirm that the bot is currently deployed on the wiki I am submitting and I would like to have it removed.
