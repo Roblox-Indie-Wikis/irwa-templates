@@ -21,7 +21,7 @@ Requirements:
 * https://www.mediawiki.org/wiki/Extension:TemplateStylesExtender
 * https://www.mediawiki.org/wiki/Extension:OAuth
 
-1. Create a bot account on your wiki, give it the confirmed user group and log in with it.
+1. Create a bot account on your wiki, give it the *bot* and *confirmed* user groups and log in with it.
 2. Go to *Special:OAuthConsumerRegistration* on your wiki.
 3. Click "Request a token for a new OAuth 2.0 client.".
 4. Enter the following into the form:
