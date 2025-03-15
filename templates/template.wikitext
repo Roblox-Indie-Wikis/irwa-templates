@@ -9,12 +9,12 @@
 </div>
 <div class="irwa-members">
   <div class="irwa-member invert-member-icon-dark">[[File:HybridCafeWikiLogo.svg|class=hybrid-cafe-logo  mw-no-invert|20px]] [https://hybridcafe.wiki Hybrid Cafe]</div>
-  <div class="irwa-member invert-member-icon">[[File:PressureWikiLogo.png|class=irwa-member-logo  mw-no-invert|20px]] [https://urbanshade.org Pressure ]</div>
-  <div class="irwa-member">[[File:UTGWikiLogo.png|class=irwa-member-logo  mw-no-invert|20px]] [https://utg.miraheze.org Untitled Tag Game]</div>
-  <div class="irwa-member">[[File:GBPWikiLogo.png|class=irwa-member-logo  mw-no-invert|20px]] [https://gbp.miraheze.org Guts & Blackpower]</div>
-  <div class="irwa-member">[[File:OutlasterWikiLogo.png|class=irwa-member-logo  mw-no-invert|20px]] [https://outlaster.miraheze.org Outlaster]</div>
-  <div class="irwa-member">[[File:FischWikiLogo.png|class=irwa-member-logo  mw-no-invert|20px]] [https://fischipedia.org Fischipedia]</div>
-  <div class="irwa-member">[[File:DovedaleWikiLogo.png|class=irwa-member-logo  mw-no-invert|20px]] [https://dovedale.wiki Dovedale Railway]</div>
+  <div class="irwa-member invert-member-icon">[[File:PressureWikiLogo.png|class=pressure-logo  mw-no-invert|20px]] [https://urbanshade.org Pressure ]</div>
+  <div class="irwa-member">[[File:UTGWikiLogo.png|class=utg-logo  mw-no-invert|20px]] [https://utg.miraheze.org Untitled Tag Game]</div>
+  <div class="irwa-member">[[File:GBPWikiLogo.png|class=gbp-logo  mw-no-invert|20px]] [https://gbp.miraheze.org Guts & Blackpower]</div>
+  <div class="irwa-member">[[File:OutlasterWikiLogo.png|class=outlaster-logo  mw-no-invert|20px]] [https://outlaster.miraheze.org Outlaster]</div>
+  <div class="irwa-member">[[File:FischWikiLogo.png|class=fisch-logo  mw-no-invert|20px]] [https://fischipedia.org Fischipedia]</div>
+  <div class="irwa-member">[[File:DovedaleWikiLogo.png|class=dovedale-logo  mw-no-invert|20px]] [https://dovedale.wiki Dovedale Railway]</div>
 </div>
 </div>
 <noinclude>
@@ -22,7 +22,7 @@ This template is shared across all members of the [https://indierobloxwikis.org/
 
 Notes:
 * Please do not edit this template manually! It is automatically updated by a bot and any changes made will be discarded the next time a template update happens. Instead, [https://github.com/Roblox-Indie-Wikis/irwa-templates/issues open an issue] at the template's repository.
-* The link contains UTM tracking and will provide the wiki name as well as the current page name to the web page of the alliance.
+* The link contains UTM tracking and will provide the wiki name as well as the current page name to the analytics provider of the IRWA website. 
 
 {{#ifexist: Template:IRWA/extra-documentation | {{IRWA/extra-documentation}} |}}
 <templatedata>
