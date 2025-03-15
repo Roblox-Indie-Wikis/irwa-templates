@@ -1,0 +1,51 @@
+name: Report a bug
+description: Report a bug regarding the bot or a template deployed by the bot. 
+title: "[Bug]: <title>"
+labels: ["bug"]
+type: Bug
+projects: ["Roblox-Indie-Wikis/2"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome! Use this form to report a bug that is affecting the bot or a template deployed by the bot.
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: "example: The link in the template leads to the wrong page."
+    validations:
+      required: true
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to reproduce the bug
+      description: Steps to reproduce the behavior.
+      placeholder: "example: 1. Go to '...' 2. Click on '....' 3. Scroll down to '....'"
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: "example: The link should lead to the correct page."
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add links to screenshots to help explain your problem.
+      placeholder: "example: ![screenshot](https://example.com/screenshot.png)"
+    validations:
+      required: false
+  - type: input
+    id: affected_page
+    attributes:
+      label: Affected page
+      description: Link to the page where the bug is present, if applicable.
+      placeholder: "example: https://mywiki.miraheze.org/wiki/SomePage"
+    validations:
+      required: false
