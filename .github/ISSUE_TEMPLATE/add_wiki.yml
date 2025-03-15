@@ -31,6 +31,6 @@ body:
     id: captchas
     attributes:
       label: Before you submit...
-      description: Just making sure you are actually a member! 
+      description: Just making sure you are actually a member!
       options:
         - label: I confirm my wiki that I am submitting is already an existing approved IRWA member.
