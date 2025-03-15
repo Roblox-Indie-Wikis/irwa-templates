@@ -5,7 +5,7 @@ This repository provides and deploys shared templates on member wikis of the Ind
 ## Adding the bot to your wiki
 
 > [!IMPORTANT]
-> Your wiki must be a part of the [Indie Roblox Wiki Alliance](https://indierobloxwikis.org/) (IRWA) for it to be added to the bot. Learn more about joining [here](https://indierobloxwikis.org/joining/)
+> Your wiki must be a part of the [Indie Roblox Wiki Alliance](https://indierobloxwikis.org/) (IRWA) for it to be added to the bot. Learn more about joining [here](https://indierobloxwikis.org/joining/).
 
 To request the addition of the bot to your wiki, please [open an issue](https://github.com/Roblox-Indie-Wikis/irwa-templates/issues) using the *Add wiki* issue form. A bureaucrat is required to approve the process before the issue will be handled.
 
