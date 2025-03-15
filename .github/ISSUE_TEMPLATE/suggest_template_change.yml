@@ -1,5 +1,5 @@
 name: Suggest template change
-description: Suggest a change to the template or its CSS. 
+description: Suggest a change to the template or its CSS.
 title: "[Template]: <title>"
 labels: ["templates"]
 type: Task
@@ -20,6 +20,6 @@ body:
   - type: checkboxes
     id: licensing
     attributes:
-      label: Before you submit... 
+      label: Before you submit...
       options:
         - label: I confirm that any code or changes I suggest can be used in this repository under its current license.

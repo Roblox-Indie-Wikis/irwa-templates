@@ -1,5 +1,5 @@
 name: Report a bug
-description: Report a bug regarding the bot or a template deployed by the bot. 
+description: Report a bug regarding the bot or a template deployed by the bot.
 title: "[Bug]: <title>"
 labels: ["bug"]
 type: Bug

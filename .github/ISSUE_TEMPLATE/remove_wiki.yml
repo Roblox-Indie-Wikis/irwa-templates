@@ -1,5 +1,5 @@
 name: Remove wiki
-description: Remove a wiki from the bot. 
+description: Remove a wiki from the bot.
 title: "[Remove Wiki]: <wiki name>"
 labels: ["wikis"]
 type: Task
@@ -10,7 +10,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Welcome! Note that a bureucrat on the wiki must either submit this request or confirm it for it to be handled.
+        Welcome! Note that a bureaucrat on the wiki must either submit this request or confirm it for it to be handled.
   - type: input
     id: wiki_url
     attributes:
@@ -29,6 +29,6 @@ body:
   - type: checkboxes
     id: captchas
     attributes:
-      label: Before You Submit... 
+      label: Before you submit...
       options:
         - label: I confirm that the bot is currently deployed on the wiki I am submitting and I would like to have it removed.
