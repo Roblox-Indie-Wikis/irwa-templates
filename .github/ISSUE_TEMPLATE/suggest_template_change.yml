@@ -1,0 +1,24 @@
+name: Suggest template change
+description: Suggest a change to the template or its CSS. 
+title: "[Template]: <title>"
+labels: ["templates"]
+projects: ["Roblox-Indie-Wikis/2"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome! Use this form to suggest a change to the template or its CSS.
+  - type: textarea
+    id: suggested_change
+    attributes:
+      label: Suggested change
+      description: Describe the change you would like to see.
+      placeholder: "example: Increase the font size of the wiki links."
+    validations:
+      required: true
+  - type: checkboxes
+    id: licensing
+    attributes:
+      label: Before you submit... 
+      options:
+        - label: I confirm that any code or changes I suggest can be used in this repository under its current license.
