@@ -2,6 +2,7 @@ name: Suggest template change
 description: Suggest a change to the template or its CSS. 
 title: "[Template]: <title>"
 labels: ["templates"]
+type: Task
 projects: ["Roblox-Indie-Wikis/2"]
 body:
   - type: markdown

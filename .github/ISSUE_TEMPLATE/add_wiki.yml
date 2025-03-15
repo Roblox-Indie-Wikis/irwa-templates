@@ -2,6 +2,7 @@ name: Add wiki
 description: Add a wiki that is part of the IRWA to the bot. 
 title: "[Add Wiki]: <wiki name>"
 labels: ["wikis"]
+type: Task
 projects: ["Roblox-Indie-Wikis/2"]
 assignees:
   - SomeMWDev

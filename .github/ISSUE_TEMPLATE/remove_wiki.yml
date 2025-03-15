@@ -2,6 +2,7 @@ name: Remove wiki
 description: Remove a wiki from the bot. 
 title: "[Remove Wiki]: <wiki name>"
 labels: ["wikis"]
+type: Task
 projects: ["Roblox-Indie-Wikis/2"]
 assignees:
   - SomeMWDev
