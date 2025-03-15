@@ -1,0 +1,33 @@
+name: Remove wiki
+description: Remove a wiki from the bot. 
+title: "[Remove Wiki]: <wiki name>"
+labels: ["wikis"]
+projects: ["Roblox-Indie-Wikis/2"]
+assignees:
+  - SomeMWDev
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome! Note that a bureucrat on the wiki must either submit this request or confirm it for it to be handled.
+  - type: input
+    id: wiki_url
+    attributes:
+      label: Wiki URL
+      description: The URL of the main page of the wiki.
+      placeholder: ex. mycoolwiki.org
+    validations:
+      required: true
+  - type: dropdown
+    id: miraheze
+    attributes:
+      label: Where is the wiki hosted?
+      options:
+        - Miraheze
+        - Other (Self Hosted etc.)
+  - type: checkboxes
+    id: captchas
+    attributes:
+      label: Before You Submit... 
+      options:
+        - label: I confirm that the bot is currently deployed on the wiki I am submitting and I would like to have it removed.

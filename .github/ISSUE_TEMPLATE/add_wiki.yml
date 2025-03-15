@@ -9,7 +9,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Welcome! Please only request wikis to be added that are part of the Indie Roblox Wiki Alliance (IRWA). To request to be added, please see [this page](https://indierobloxwikis.org/joining/) for more information. 
+        Welcome! Please only request wikis to be added that are part of the Indie Roblox Wiki Alliance (IRWA). To join the alliance, please see [this page](https://indierobloxwikis.org/joining/) for more information.
+        Note that a bureucrat on the wiki must either submit this request or confirm it for it to be handled.
   - type: input
     id: wiki_url
     attributes:
