@@ -1,7 +1,5 @@
-{{#if: {{{custom-stylesheet|}}}
-  {{#tag:templatestyles||src={{{custom-stylesheet}}}}}
-| {{#tag:templatestyles||src=Template:IRWA/styles.css}}
-}}
+{{#ifeq: {{{apply-default-styles|true}}} | true | {{#tag:templatestyles||src=Template:IRWA/styles.css}} | }}
+{{#if: {{{custom-stylesheet|}}} | {{#tag:templatestyles||src={{{custom-stylesheet}}}}} | }}
 <div class="irwa-navigation {{#ifeq: {{{exclude-no-invert|}}} | true | | mw-no-invert }} {{#if: {{{custom-stylesheet|}}} | | irwa-conf-{{{orientation|horizontal}}} irwa-color-{{{theme|adaptive}}} }}">
 <div class="irwa-header">
 <span class="irwa-title">Independent Roblox Wiki Alliance</span><br>
@@ -28,9 +26,16 @@ Notes:
 <templatedata>
 {
 	"params": {
+		"apply-default-styles": {
+			"label": "Apply Default Styles",
+			"description": "If set to false, the default stylesheet will not be applied to the template.",
+			"example": "true",
+			"type": "boolean",
+			"default": "true"
+		},
 		"custom-stylesheet": {
 			"label": "Custom Stylesheet",
-			"description": "If this is set, the stylesheet specified in the parameter value will be used for styling the template instead of the default one.",
+			"description": "If this is set, the stylesheet specified in the parameter value will be loaded.",
 			"example": "Template:IRWA/custom.css",
 			"type": "wiki-template-name"
 		},
