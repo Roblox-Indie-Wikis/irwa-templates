@@ -6,5 +6,9 @@
   {
     "apiUrl": "https://urbanshade.org/w/api.php",
     "accessToken": "MIRAHEZE_ACCESS_TOKEN"
+  },
+  {
+    "apiUrl": "https://utg.miraheze.org/w/api.php",
+    "accessToken": "MIRAHEZE_ACCESS_TOKEN"
   }
 ]
