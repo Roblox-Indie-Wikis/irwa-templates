@@ -3,7 +3,7 @@
 <div class="irwa-navigation {{#ifeq: {{{exclude-no-invert|}}} | true | | mw-no-invert }} irwa-conf-{{{orientation|horizontal}}} irwa-color-{{{theme|adaptive}}}">
 <div class="irwa-header">
 <span class="irwa-title">Independent Roblox Wiki Alliance</span><br>
-[https://indierobloxwikis.org/?utm_source={{urlencode:{{SITENAME}}}}&utm_medium=Wiki&utm_campaign={{FULLPAGENAMEE}} Learn More]
+[https://indierobloxwikis.org/?utm_source={{urlencode:{{SITENAME}}}}&utm_medium=Wiki&utm_campaign=IRWATemplate Learn More]
 </div>
 <div class="irwa-members">
   <div class="irwa-member invert-member-icon-dark">[[File:HybridCafeWikiLogo.svg|class=hybrid-cafe-logo mw-no-invert|20px|alt=Logo of the Hybrid Cafe Wiki]] [https://hybridcafe.wiki Hybrid Cafe]</div>
@@ -20,7 +20,7 @@ This template is shared across all members of the [https://indierobloxwikis.org/
 
 Notes:
 * Please do not edit this template manually! It is automatically updated by a bot and any changes made will be discarded the next time a template update happens. Instead, [https://github.com/Roblox-Indie-Wikis/irwa-templates/issues open an issue] at the template's repository.
-* The link contains UTM tracking and will provide the wiki name as well as the current page name to the analytics provider of the IRWA website. 
+* The link contains UTM tracking and will provide the wiki name to the analytics provider of the IRWA website. 
 
 == Themes ==
 
