@@ -20,7 +20,7 @@ This template is shared across all members of the [https://indierobloxwikis.org/
 
 Notes:
 * Please do not edit this template manually! It is automatically updated by a bot and any changes made will be discarded the next time a template update happens. Instead, [https://github.com/Roblox-Indie-Wikis/irwa-templates/issues open an issue] at the template's repository.
-* The link contains UTM tracking and will provide the wiki name as well as the current page name to the analytics provider of the IRWA website. 
+* The link contains UTM tracking and will provide the wiki name to the analytics provider of the IRWA website. 
 
 == Themes ==
 
