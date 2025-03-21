@@ -3,7 +3,7 @@
 <div class="irwa-navigation {{#ifeq: {{{exclude-no-invert|}}} | true | | mw-no-invert }} irwa-conf-{{{orientation|horizontal}}} irwa-color-{{{theme|adaptive}}}">
 <div class="irwa-header">
 <span class="irwa-title">Independent Roblox Wiki Alliance</span><br>
-[https://indierobloxwikis.org/?utm_source={{urlencode:{{SITENAME}}}}&utm_medium=Wiki&utm_campaign={{FULLPAGENAMEE}} Learn More]
+[https://indierobloxwikis.org/?utm_source={{urlencode:{{SITENAME}}}}&utm_medium=Wiki&utm_campaign=IRWATemplate Learn More]
 </div>
 <div class="irwa-members">
   <div class="irwa-member invert-member-icon-dark">[[File:HybridCafeWikiLogo.svg|class=hybrid-cafe-logo mw-no-invert|20px|alt=Logo of the Hybrid Cafe Wiki]] [https://hybridcafe.wiki Hybrid Cafe]</div>
