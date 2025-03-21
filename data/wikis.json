@@ -18,5 +18,13 @@
   {
     "apiUrl": "https://outlaster.miraheze.org/w/api.php",
     "accessToken": "MIRAHEZE_ACCESS_TOKEN"
+  },
+  {
+    "apiUrl": "https://fischipedia.org/w/api.php",
+    "accessToken": "MIRAHEZE_ACCESS_TOKEN"
+  },
+  {
+    "apiUrl": "https://gbp.miraheze.org/w/api.php",
+    "accessToken": "MIRAHEZE_ACCESS_TOKEN"
   }
 ]
