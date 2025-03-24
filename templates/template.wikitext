@@ -10,7 +10,7 @@
   <div class="irwa-member invert-member-icon">[[File:PressureWikiLogo.png|class=pressure-logo mw-no-invert|20px|alt=Logo of the Pressure Wiki]] [https://urbanshade.org Pressure]</div>
   <div class="irwa-member">[[File:UTGWikiLogo.png|class=utg-logo mw-no-invert|20px|alt=Logo of the Untitled Tag Game Wiki]] [https://utg.miraheze.org Untitled Tag Game]</div>
   <div class="irwa-member">[[File:GBPWikiLogo.png|class=gbp-logo mw-no-invert|20px|alt=Logo of the Guts & Blackpowder Wiki]] [https://gbp.miraheze.org Guts & Blackpowder]</div>
-  <div class="irwa-member">[[File:OutlasterWikiLogo.png|class=outlaster-logo mw-no-invert|20px|alt=Logo of the Outlaster Wiki]] [https://outlaster.miraheze.org Outlaster]</div>
+  <div class="irwa-member">[[File:OutlasterWikiLogo.png|class=outlaster-logo mw-no-invert|20px|alt=Logo of the Outlaster Wiki]] [https://outlaster.peakprecision.wiki/ Outlaster]</div>
   <div class="irwa-member">[[File:FischWikiLogo.png|class=fisch-logo mw-no-invert|20px|alt=Logo of Fischipedia]] [https://fischipedia.org Fischipedia]</div>
   <div class="irwa-member">[[File:DovedaleWikiLogo.png|class=dovedale-logo mw-no-invert|20px|alt=Logo of the Dovedale Railway Wiki]] [https://dovedale.wiki Dovedale Railway]</div>
 </div>
