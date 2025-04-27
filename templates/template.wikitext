@@ -6,13 +6,14 @@
 [https://indierobloxwikis.org/?utm_source={{urlencode:{{SITENAME}}}}&utm_medium=Wiki&utm_campaign=IRWATemplate Learn More]
 </div>
 <div class="irwa-members">
-  <div class="irwa-member invert-member-icon-dark irwa-hybridcafe">[[File:HybridCafeWikiLogo.svg|class=hybrid-cafe-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Hybrid Cafe Wiki|link=https://hybridcafe.wiki]] [https://hybridcafe.wiki Hybrid Cafe]</div>
-  <div class="irwa-member invert-member-icon irwa-pressure">[[File:PressureWikiLogo.png|class=pressure-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Pressure Wiki|link=https://urbanshade.org]] [https://urbanshade.org Pressure]</div>
-  <div class="irwa-member irwa-utg">[[File:UTGWikiLogo.png|class=utg-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Untitled Tag Game Wiki|link=https://utg.miraheze.org]] [https://utg.miraheze.org Untitled Tag Game]</div>
-  <div class="irwa-member irwa-gbp">[[File:GBPWikiLogo.png|class=gbp-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Guts & Blackpowder Wiki|link=https://gbp.miraheze.org]] [https://gbp.miraheze.org Guts & Blackpowder]</div>
-  <div class="irwa-member irwa-outlaster">[[File:OutlasterWikiLogo.png|class=outlaster-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Outlaster Wiki|link=https://outlaster.peakprecision.wiki]] [https://outlaster.peakprecision.wiki/ Outlaster]</div>
-  <div class="irwa-member irwa-fisch">[[File:FischWikiLogo.png|class=fisch-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of Fischipedia|link=https://fischipedia.org]] [https://fischipedia.org Fischipedia]</div>
-  <div class="irwa-member invert-member-icon-dark irwa-dovedale">[[File:DovedaleWikiLogo.png|class=dovedale-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Dovedale Railway Wiki|link=https://dovedale.wiki]] [https://dovedale.wiki Dovedale Railway]</div>
+	<div class="irwa-member invert-member-icon-dark irwa-hybridcafe">[[File:HybridCafeWikiLogo.svg|class=hybrid-cafe-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Hybrid Cafe Wiki|link=https://hybridcafe.wiki]] [https://hybridcafe.wiki Hybrid Cafe]</div>
+	<div class="irwa-member invert-member-icon irwa-pressure">[[File:PressureWikiLogo.png|class=pressure-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Pressure Wiki|link=https://urbanshade.org]] [https://urbanshade.org Pressure]</div>
+	<div class="irwa-member irwa-utg">[[File:UTGWikiLogo.png|class=utg-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Untitled Tag Game Wiki|link=https://utg.miraheze.org]] [https://utg.miraheze.org Untitled Tag Game]</div>
+	<div class="irwa-member irwa-gbp">[[File:GBPWikiLogo.png|class=gbp-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Guts & Blackpowder Wiki|link=https://gbp.miraheze.org]] [https://gbp.miraheze.org Guts & Blackpowder]</div>
+	<div class="irwa-member irwa-outlaster">[[File:OutlasterWikiLogo.png|class=outlaster-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Outlaster Wiki|link=https://outlaster.peakprecision.wiki]] [https://outlaster.peakprecision.wiki/ Outlaster]</div>
+	<div class="irwa-member irwa-fisch">[[File:FischWikiLogo.png|class=fisch-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of Fischipedia|link=https://fischipedia.org]] [https://fischipedia.org Fischipedia]</div>
+	<div class="irwa-member invert-member-icon-dark irwa-dovedale">[[File:DovedaleWikiLogo.png|class=dovedale-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Dovedale Railway Wiki|link=https://dovedale.wiki]] [https://dovedale.wiki Dovedale Railway]</div>
+	<div class="irwa-member irwa-industrialist">[[File:IndustrialistWikiLogo.png|class=industrialist-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Industrialist Wiki|link=https://industrialist.miraheze.org]] [https://industrialist.miraheze.org Industrialist]</div>
 </div>
 </div></includeonly>
 <noinclude>
