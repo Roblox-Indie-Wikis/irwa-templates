@@ -28,7 +28,7 @@ type File = {
 import wikisData from "./data/wikis.json";
 import templatesData from "./data/templates.json";
 import filesData from "./data/files.json";
-import { MwnError } from "mwn/build/error";
+import { MwnError, MwnMissingPageError } from "mwn/build/error";
 
 const wikis: Wiki[] = wikisData;
 const templates: Template[] = templatesData;
@@ -91,7 +91,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
         };
       });
     } catch (error) {
-      if (error instanceof MwnError.MissingPage) {
+      if (error instanceof MwnMissingPageError) {
         console.log(`ℹ️ Creating ${template.pageName} on wiki ${wiki.apiUrl}...`);
         try {
           await bot.create(template.pageName, content, editSummary);
