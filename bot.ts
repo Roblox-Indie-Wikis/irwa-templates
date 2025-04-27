@@ -1,4 +1,5 @@
 import { Mwn } from "mwn";
+import { MwnMissingPageError } from "mwn/build/error";
 import * as dotenv from "dotenv";
 import * as fs from "fs";
 import * as crypto from "crypto";
@@ -28,7 +29,6 @@ type File = {
 import wikisData from "./data/wikis.json";
 import templatesData from "./data/templates.json";
 import filesData from "./data/files.json";
-import { MwnError, MwnMissingPageError } from "mwn/build/error";
 
 const wikis: Wiki[] = wikisData;
 const templates: Template[] = templatesData;
