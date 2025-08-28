@@ -6,7 +6,7 @@ import * as crypto from "crypto";
 
 dotenv.config();
 
-const commitMessage = "Update templates"; //process.env.COMMIT_MESSAGE ?? "Update template";
+const commitMessage = process.env.COMMIT_MESSAGE ?? "Update templates";
 const commitAuthorName = process.env.COMMIT_AUTHOR_NAME;
 
 type Wiki = {
@@ -60,7 +60,8 @@ async function updateTemplateOnWiki(wiki: Wiki) {
   for (const template of templates) {
     let content = fs.readFileSync(template.filePath, "utf-8");
 
-    let editSummary = commitMessage;
+    // only take the first line of the commit
+    let editSummary = commitMessage.split("\n")[0];
     if (commitAuthorName) {
       editSummary += ` (${commitAuthorName})`;
     }
