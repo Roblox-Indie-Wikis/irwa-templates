@@ -60,7 +60,8 @@ async function updateTemplateOnWiki(wiki: Wiki) {
   for (const template of templates) {
     let content = fs.readFileSync(template.filePath, "utf-8");
 
-    let editSummary = commitMessage;
+    // only take the first line of the commit
+    let editSummary = commitMessage.split("\n")[0];
     if (commitAuthorName) {
       editSummary += ` (${commitAuthorName})`;
     }
