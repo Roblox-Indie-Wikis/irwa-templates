@@ -6,7 +6,7 @@ import * as crypto from "crypto";
 
 dotenv.config();
 
-const commitMessage = "Update templates"; //process.env.COMMIT_MESSAGE ?? "Update template";
+const commitMessage = process.env.COMMIT_MESSAGE ?? "Update template";
 const commitAuthorName = process.env.COMMIT_AUTHOR_NAME;
 
 type Wiki = {
