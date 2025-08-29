@@ -65,13 +65,6 @@ html.theme-dark .irwa-color-adaptive {
   color: var(--irwa-navigation-color);
 }
 
-.irwa-header {
-  display: flex; 
-  flex-direction: row; 
-  align-items: center; 
-  gap: 5px
-}
-
 .irwa-header p {
   text-align: center;
   font-weight: bold;
@@ -112,7 +105,11 @@ html.theme-dark .irwa-color-adaptive {
 }
 
 .irwa-member {
-  min-width: 13em;
+  max-width: 13em;
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  gap: 5px
 }
 
 /* Horizontal Configuration - Overrides various vertical configuration stuff */
