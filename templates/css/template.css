@@ -102,10 +102,11 @@ html.theme-dark .irwa-color-adaptive {
   flex-wrap: wrap;
   justify-content: center;
   background-color: var(--irwa-members-background);
+  gap: 5px 10px;
 }
 
 .irwa-member {
-  max-width: 13em;
+  /* min-width: 13em; */
   display: flex; 
   flex-direction: row; 
   align-items: center; 
