@@ -101,8 +101,9 @@ html.theme-dark .irwa-color-adaptive {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
   background-color: var(--irwa-members-background);
-  gap: 5px 10px;
+  gap: 5px 15px;
 }
 
 .irwa-member {
