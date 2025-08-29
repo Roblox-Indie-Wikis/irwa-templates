@@ -107,7 +107,6 @@ html.theme-dark .irwa-color-adaptive {
 }
 
 .irwa-member {
-  /* min-width: 13em; */
   display: flex; 
   flex-direction: row; 
   align-items: center; 
