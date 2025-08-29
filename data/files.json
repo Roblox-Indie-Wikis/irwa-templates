@@ -16,10 +16,6 @@
     "wikiFileName": "File:HybridCafeWikiLogo.svg"
   },
   {
-    "filePath": "templates/img/OutlasterWikiLogo.png",
-    "wikiFileName": "File:OutlasterWikiLogo.png"
-  },
-  {
     "filePath": "templates/img/PressureWikiLogo.png",
     "wikiFileName": "File:PressureWikiLogo.png"
   },
@@ -30,5 +26,9 @@
   {
     "filePath": "templates/img/IndustrialistWikiLogo.png",
     "wikiFileName": "File:IndustrialistWikiLogo.png"
+  },
+  {
+    "filePath": "templates/img/SewhWikiLogo.png",
+    "wikiFileName": "File:SewhWikiLogo.png"
   }
 ]

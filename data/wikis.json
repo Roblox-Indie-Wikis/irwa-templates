@@ -16,10 +16,6 @@
     "accessToken": "MIRAHEZE_ACCESS_TOKEN"
   },
   {
-    "apiUrl": "https://outlaster.peakprecision.wiki/w/api.php",
-    "accessToken": "MIRAHEZE_ACCESS_TOKEN"
-  },
-  {
     "apiUrl": "https://fischipedia.org/w/api.php",
     "accessToken": "MIRAHEZE_ACCESS_TOKEN"
   },
@@ -29,6 +25,10 @@
   },
   {
     "apiUrl": "https://industrialist.miraheze.org/w/api.php",
+    "accessToken": "MIRAHEZE_ACCESS_TOKEN"
+  },
+  {
+    "apiUrl": "https://sewh.miraheze.org/w/api.php",
     "accessToken": "MIRAHEZE_ACCESS_TOKEN"
   },
   {
