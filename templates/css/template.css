@@ -100,12 +100,16 @@ html.theme-dark .irwa-color-adaptive {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  place-content: center;
   background-color: var(--irwa-members-background);
+  gap: 5px 15px;
 }
 
 .irwa-member {
-  min-width: 13em;
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  gap: 5px
 }
 
 /* Horizontal Configuration - Overrides various vertical configuration stuff */
