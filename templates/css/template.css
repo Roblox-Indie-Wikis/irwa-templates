@@ -112,6 +112,12 @@ html.theme-dark .irwa-color-adaptive {
   gap: 5px
 }
 
+.irwa-member img { 
+  width: 20px; 
+  height: 20px; 
+  object-fit: contain; 
+}
+
 /* Horizontal Configuration - Overrides various vertical configuration stuff */
 
 @media screen and (width >= 600px) {
