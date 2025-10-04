@@ -1,5 +1,8 @@
 # IRWA Templates
 
+[![Deploy Templates](https://github.com/Roblox-Indie-Wikis/irwa-templates/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Roblox-Indie-Wikis/irwa-templates/actions/workflows/deploy.yml)
+[![Lint](https://github.com/Roblox-Indie-Wikis/irwa-templates/actions/workflows/lint.yml/badge.svg)](https://github.com/Roblox-Indie-Wikis/irwa-templates/actions/workflows/lint.yml)
+
 This repository provides and deploys shared templates on member wikis of the Independent Roblox Wiki Alliance.
 
 ## Adding the bot to your wiki
