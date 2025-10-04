@@ -130,7 +130,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
     const response = await bot.request({
       action: "query",
       prop: "imageinfo",
-      titles: file.wikiFileName,
+      titles: `File:${file.wikiFileName}`,
       iiprop: "sha1",
       format: "json",
     });
@@ -145,7 +145,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
       result.imageinfo[0].sha1 === file.fileHash
     ) {
       console.log(
-        `✅ ${file.wikiFileName} on wiki ${wiki.apiUrl} is up to date!`
+        `✅ File ${file.wikiFileName} on wiki ${wiki.apiUrl} is up to date!`
       );
       continue;
     }
