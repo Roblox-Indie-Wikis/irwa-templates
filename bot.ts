@@ -8,6 +8,7 @@ dotenv.config();
 
 const commitMessage = process.env.COMMIT_MESSAGE ?? "Update templates";
 const commitAuthorName = process.env.COMMIT_AUTHOR_NAME;
+const isDryRun = process.env.BOT_DRY_RUN ?? false;
 
 type Wiki = {
   apiUrl: string;
@@ -84,6 +85,12 @@ async function updateTemplateOnWiki(wiki: Wiki) {
         }
   
         console.log(`ℹ️ Updating ${template.pageName} on wiki ${wiki.apiUrl}...`);
+
+        if (isDryRun) {
+          console.log('🪲 (Skipped) New content:', content);
+          return;
+        }
+
         return {
           text: content,
           summary: editSummary,
@@ -94,6 +101,10 @@ async function updateTemplateOnWiki(wiki: Wiki) {
     } catch (error) {
       if (error instanceof MwnMissingPageError) {
         console.log(`ℹ️ Creating ${template.pageName} on wiki ${wiki.apiUrl}...`);
+        if (isDryRun) {
+          console.log('🪲 (Skipped) New content:', content);
+          continue;
+        }
         try {
           await bot.create(template.pageName, content, editSummary);
         } catch (error) {
@@ -138,6 +149,10 @@ async function updateTemplateOnWiki(wiki: Wiki) {
     }
 
     console.log(`ℹ️ Updating file ${file.wikiFileName} on wiki ${wiki.apiUrl}...`);
+    if (isDryRun) {
+      console.log('🪲 (Skipped)');
+      continue;
+    }
 
     try {
       await bot.upload(file.filePath, file.wikiFileName, "Update file");
