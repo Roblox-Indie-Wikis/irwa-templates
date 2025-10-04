@@ -3,6 +3,13 @@ name: Deploy Templates
 on:
   push:
     branches: [main]
+  workflow_dispatch:
+    inputs:
+      dryRun:
+        description: 'Perform a dry run'
+        default: true
+        required: true
+        type: boolean
 
 jobs:
   deploy-templates:
@@ -23,3 +30,4 @@ jobs:
           COMMIT_AUTHOR_NAME: ${{ github.event.head_commit.author.name }}
           MIRAHEZE_ACCESS_TOKEN: ${{ secrets.MIRAHEZE_ACCESS_TOKEN }}
           DOVEDALE_ACCESS_TOKEN: ${{ secrets.DOVEDALE_ACCESS_TOKEN }}
+          BOT_DRY_RUN: ${{ inputs.dryRun }}
