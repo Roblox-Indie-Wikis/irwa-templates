@@ -8,7 +8,7 @@ dotenv.config();
 
 const commitMessage = process.env.COMMIT_MESSAGE ?? "Update templates";
 const commitAuthorName = process.env.COMMIT_AUTHOR_NAME;
-const isDryRun = process.env.BOT_DRY_RUN ?? false;
+const isDryRun = (process.env.BOT_DRY_RUN ?? "").toLowerCase() === "true";
 
 type Wiki = {
   apiUrl: string;

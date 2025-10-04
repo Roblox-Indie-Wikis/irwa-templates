@@ -30,4 +30,4 @@ jobs:
           COMMIT_AUTHOR_NAME: ${{ github.event.head_commit.author.name }}
           MIRAHEZE_ACCESS_TOKEN: ${{ secrets.MIRAHEZE_ACCESS_TOKEN }}
           DOVEDALE_ACCESS_TOKEN: ${{ secrets.DOVEDALE_ACCESS_TOKEN }}
-          BOT_DRY_RUN: ${{ inputs.dryRun }}
+          BOT_DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.dryRun == 'true' }}
