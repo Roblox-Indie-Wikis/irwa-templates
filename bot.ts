@@ -101,10 +101,12 @@ async function updateTemplateOnWiki(wiki: Wiki) {
     } catch (error) {
       if (error instanceof MwnMissingPageError) {
         console.log(`ℹ️ Creating ${template.pageName} on wiki ${wiki.apiUrl}...`);
+
         if (isDryRun) {
           console.log('🪲 (Skipped) New content:', content);
           continue;
         }
+
         try {
           await bot.create(template.pageName, content, editSummary);
         } catch (error) {
@@ -149,6 +151,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
     }
 
     console.log(`ℹ️ Updating file ${file.wikiFileName} on wiki ${wiki.apiUrl}...`);
+    
     if (isDryRun) {
       console.log('🪲 (Skipped)');
       continue;
