@@ -36,6 +36,10 @@
     "accessToken": "MIRAHEZE_ACCESS_TOKEN"
   },
   {
+    "apiUrl": "https://rt3.miraheze.org/w/api.php",
+    "accessToken": "MIRAHEZE_ACCESS_TOKEN"
+  },
+  {
     "apiUrl": "https://dovedale.wiki/api.php",
     "accessToken": "DOVEDALE_ACCESS_TOKEN"
   }
