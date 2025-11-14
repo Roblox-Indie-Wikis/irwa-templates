@@ -18,7 +18,7 @@ The bot will:
 
 * Create **1** template page (Template:IRWA)
 * Create **1** template css page (Template:IRWA/styles.css)
-* Upload **11** wiki logos (see `templates/img` folder)
+* Upload **10** wiki logos (see `templates/img` folder)
 
 and keep these updated based on changes in the repository.
 
