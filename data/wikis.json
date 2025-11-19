@@ -36,7 +36,7 @@
     "accessToken": "MIRAHEZE_ACCESS_TOKEN"
   },
   {
-    "apiUrl": "https://official3ps.miraheze.org/w/api.php",
+    "apiUrl": "https://3ps.miraheze.org/w/api.php",
     "accessToken": "MIRAHEZE_ACCESS_TOKEN"
   },
   {
