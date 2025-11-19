@@ -6,7 +6,7 @@
 [https://indierobloxwikis.org/?utm_source={{urlencode:{{SITENAME}}}}&utm_medium=Wiki&utm_campaign=IRWATemplate Learn More] }}
 </div>
 <div class="irwa-members">
-	<div class="irwa-member irwa-3ps">[[File:3DPlanetsSimulatorWikiLogo.svg|class=3ps-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the 3D Planets Simulator Wiki|link=https://official3ps.miraheze.org]] [https://official3ps.miraheze.org 3D Planets Simulator]</div>
+	<div class="irwa-member irwa-3ps">[[File:3DPlanetsSimulatorWikiLogo.svg|class=3ps-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the 3D Planets Simulator Wiki|link=https://3ps.miraheze.org]] [https://3ps.miraheze.org 3D Planets Simulator]</div>
 	<div class="irwa-member invert-member-icon-dark irwa-dovedale">[[File:DovedaleWikiLogo.png|class=dovedale-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Dovedale Railway Wiki|link=https://dovedale.wiki]] [https://dovedale.wiki Dovedale Railway]</div>
 	<div class="irwa-member irwa-fisch">[[File:FischWikiLogo.png|class=fisch-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of Fischipedia|link=https://fischipedia.org]] [https://fischipedia.org Fisch]</div>
 	<div class="irwa-member irwa-gbp">[[File:GBPWikiLogo.png|class=gbp-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Guts & Blackpowder Wiki|link=https://gbp.miraheze.org]] [https://gbp.miraheze.org Guts & Blackpowder]</div>
