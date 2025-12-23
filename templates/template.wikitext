@@ -14,7 +14,7 @@
 	<div class="irwa-member invert-member-icon-dark irwa-hybridcafe">[[File:HybridCafeWikiLogo.svg|class=hybrid-cafe-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Hybrid Cafe Wiki|link=https://hybridcafe.wiki]] [https://hybridcafe.wiki Hybrid Cafe]</div>
 	<div class="irwa-member invert-member-icon irwa-phighting">[[File:PHIGHTINGWikiLogo.png|class=phighting-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the PHIGHTING! Wiki|link=https://phighting.wiki]] [https://phighting.wiki PHIGHTING!]</div>
 	<div class="irwa-member invert-member-icon irwa-pressure">[[File:PressureWikiLogo.png|class=pressure-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Pressure Wiki|link=https://urbanshade.org]] [https://urbanshade.org Pressure]</div>
-	<div class="irwa-member irwa-rt3">[[File:RestaurantTycoon3WikiLogo.png|class=rt3-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Restaurant Tycoon 3 Wiki|link=https://rt3.miraheze.org]] [https://rt3.miraheze.org Restaurant Tycoon 3]</div>
+	<div class="irwa-member irwa-rt3">[[File:RestaurantTycoon3WikiLogo.png|class=rt3-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Restaurant Tycoon 3 Wiki|link=https://rt3.ugwiki.org/w/api.php]] [https://rt3.ugwiki.org/w/api.php Restaurant Tycoon 3]</div>
 	<div class="irwa-member irwa-sewh">[[File:SewhWikiLogo.png|class=sewh-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Something Evil Will Happen Wiki|link=https://sewh.miraheze.org]] [https://sewh.miraheze.org Something Evil Will Happen]</div>
 	<div class="irwa-member irwa-utg">[[File:UTGWikiLogo.png|class=utg-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Untitled Tag Game Wiki|link=https://tagging.wiki]] [https://tagging.wiki Untitled Tag Game]</div>
 </div>
