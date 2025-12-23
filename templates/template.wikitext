@@ -7,6 +7,7 @@
 </div>
 <div class="irwa-members">
 	<div class="irwa-member irwa-3ps">[[File:3DPlanetsSimulatorWikiLogo.svg|class=3ps-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the 3D Planets Simulator Wiki|link=https://3ps.miraheze.org]] [https://3ps.miraheze.org 3D Planets Simulator]</div>
+	<div class="irwa-member irwa-dday">[[File:DDayWikiLogo.png|class=dday-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the D-DAY Wiki|link=https://robloxdday.miraheze.org]] [https://robloxdday.miraheze.org D-DAY]</div>
 	<div class="irwa-member invert-member-icon-dark irwa-dovedale">[[File:DovedaleWikiLogo.png|class=dovedale-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Dovedale Railway Wiki|link=https://dovedale.wiki]] [https://dovedale.wiki Dovedale Railway]</div>
 	<div class="irwa-member irwa-fisch">[[File:FischWikiLogo.png|class=fisch-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of Fischipedia|link=https://fischipedia.org]] [https://fischipedia.org Fisch]</div>
 	<div class="irwa-member irwa-gbp">[[File:GBPWikiLogo.png|class=gbp-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Guts & Blackpowder Wiki|link=https://gbp.miraheze.org]] [https://gbp.miraheze.org Guts & Blackpowder]</div>
@@ -14,7 +15,6 @@
 	<div class="irwa-member invert-member-icon irwa-phighting">[[File:PHIGHTINGWikiLogo.png|class=phighting-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the PHIGHTING! Wiki|link=https://phighting.wiki]] [https://phighting.wiki PHIGHTING!]</div>
 	<div class="irwa-member invert-member-icon irwa-pressure">[[File:PressureWikiLogo.png|class=pressure-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Pressure Wiki|link=https://urbanshade.org]] [https://urbanshade.org Pressure]</div>
 	<div class="irwa-member irwa-rt3">[[File:RestaurantTycoon3WikiLogo.png|class=rt3-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Restaurant Tycoon 3 Wiki|link=https://rt3.miraheze.org]] [https://rt3.miraheze.org Restaurant Tycoon 3]</div>
-	<div class="irwa-member irwa-roblox-dday">[[File:DDayWikiLogo.png|class=roblox-dday-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Roblox D-DAY Wiki|link=https://robloxdday.miraheze.org]] [https://robloxdday.miraheze.org Roblox D-DAY Wiki]</div>
 	<div class="irwa-member irwa-sewh">[[File:SewhWikiLogo.png|class=sewh-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Something Evil Will Happen Wiki|link=https://sewh.miraheze.org]] [https://sewh.miraheze.org Something Evil Will Happen]</div>
 	<div class="irwa-member irwa-utg">[[File:UTGWikiLogo.png|class=utg-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Untitled Tag Game Wiki|link=https://tagging.wiki]] [https://tagging.wiki Untitled Tag Game]</div>
 </div>
