@@ -20,7 +20,7 @@
 </div>
 </div></includeonly>
 <noinclude>
-This template is shared across all members of the [https://indierobloxwikis.org/ Indie Roblox Wiki Alliance] and provides links to all member wikis.
+This template is shared across all members of the [https://indierobloxwikis.org/ Independent Roblox Wiki Alliance] and provides links to all member wikis.
 
 Notes:
 * Please do not edit this template manually! It is automatically updated by a bot and any changes made will be discarded the next time a template update happens. Instead, [https://github.com/Roblox-Indie-Wikis/irwa-templates/issues open an issue] at the template's repository.
