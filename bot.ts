@@ -84,7 +84,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
           return;
         }
   
-        console.log(`ℹ️ Updating ${template.pageName} on wiki ${wiki.apiUrl}...`);
+        console.log(`ℹ️ Updating ${template.pageName} on wiki ${wiki.apiUrl} ...`);
 
         if (isDryRun) {
           console.log('🪲 (Skipped) New content:', content);
@@ -100,7 +100,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
       });
     } catch (error) {
       if (error instanceof MwnMissingPageError) {
-        console.log(`ℹ️ Creating ${template.pageName} on wiki ${wiki.apiUrl}...`);
+        console.log(`ℹ️ Creating ${template.pageName} on wiki ${wiki.apiUrl} ...`);
 
         if (isDryRun) {
           console.log('🪲 (Skipped) New content:', content);
@@ -150,7 +150,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
       continue;
     }
 
-    console.log(`ℹ️ Updating file ${file.wikiFileName} on wiki ${wiki.apiUrl}...`);
+    console.log(`ℹ️ Updating file ${file.wikiFileName} on wiki ${wiki.apiUrl} ...`);
     
     if (isDryRun) {
       console.log('🪲 (Skipped)');
