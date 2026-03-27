@@ -17,6 +17,7 @@
 	<div class="irwa-member irwa-rt3">[[File:RestaurantTycoon3WikiLogo.png|class=rt3-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Restaurant Tycoon 3 Wiki|link=https://rt3.ugwiki.org]] [https://rt3.ugwiki.org Restaurant Tycoon 3]</div>
 	<div class="irwa-member irwa-sewh">[[File:SewhWikiLogo.png|class=sewh-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Something Evil Will Happen Wiki|link=https://sewh.miraheze.org]] [https://sewh.miraheze.org Something Evil Will Happen]</div>
 	<div class="irwa-member irwa-utg">[[File:UTGWikiLogo.png|class=utg-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Untitled Tag Game Wiki|link=https://tagging.wiki]] [https://tagging.wiki Untitled Tag Game]</div>
+	<div class="irwa-member invert-member-icon irwa-av">[[File:AnimeVanguardsLogo.png|class=av-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Anime Vanguards Wiki|link=https://wiki.vanguards.gg]] [https://wiki.vanguards.gg Anime Vanguards]</div>
 </div>
 </div></includeonly>
 <noinclude>
