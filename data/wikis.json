@@ -44,6 +44,10 @@
     "accessToken": "MIRAHEZE_ACCESS_TOKEN"
   },
   {
+    "apiUrl": "https://wiki.vanguards.gg/w/api.php",
+    "accessToken": "MIRAHEZE_ACCESS_TOKEN"
+  },
+  {
     "apiUrl": "https://dovedale.wiki/api.php",
     "accessToken": "DOVEDALE_ACCESS_TOKEN"
   }
