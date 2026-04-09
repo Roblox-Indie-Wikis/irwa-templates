@@ -4,10 +4,6 @@
     "accessToken": "MIRAHEZE_ACCESS_TOKEN"
   },
   {
-    "apiUrl": "https://urbanshade.org/w/api.php",
-    "accessToken": "MIRAHEZE_ACCESS_TOKEN"
-  },
-  {
     "apiUrl": "https://tagging.wiki/w/api.php",
     "accessToken": "MIRAHEZE_ACCESS_TOKEN"
   },
