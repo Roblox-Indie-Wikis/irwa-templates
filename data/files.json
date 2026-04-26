@@ -42,5 +42,17 @@
   {
     "filePath": "templates/img/AnimeVanguardsLogo.svg",
     "wikiFileName": "AnimeVanguardsLogo.svg"
+  },
+  {
+    "filePath": "templates/img/ParkourRebornWikiLogo.png",
+    "wikiFileName": "ParkourRebornWikiLogo.png"
+  },
+  {
+    "filePath": "templates/img/DepthSpelunkingWikiLogo.png",
+    "wikiFileName": "DepthSpelunkingWikiLogo.png"
+  },
+  {
+    "filePath": "templates/img/UMTWikiLogo.png",
+    "wikiFileName": "UMTWikiLogo.png"
   }
 ]

@@ -48,6 +48,18 @@
     "accessToken": "MIRAHEZE_ACCESS_TOKEN"
   },
   {
+    "apiUrl": "https://parkourreborn.wiki/w/api.php",
+    "accessToken": "MIRAHEZE_ACCESS_TOKEN"
+  },
+  {
+    "apiUrl": "https://umt.miraheze.org/w/api.php",
+    "accessToken": "MIRAHEZE_ACCESS_TOKEN"
+  },
+  {
+    "apiUrl": "https://depthspelunking.miraheze.org/w/api.php",
+    "accessToken": "MIRAHEZE_ACCESS_TOKEN"
+  },
+  {
     "apiUrl": "https://dovedale.wiki/api.php",
     "accessToken": "DOVEDALE_ACCESS_TOKEN"
   }
