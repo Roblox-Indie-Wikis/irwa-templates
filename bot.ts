@@ -70,7 +70,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
     if (wiki.allianceLogoUrl) {
       // replace url on 3rd party wikis
       content = content.replace(
-        "https://static.wikitide.net/urbanshadewiki/d/d1/IRWA_Logo.svg",
+        "https://static.wikitide.net/commonswiki/e/e0/IRWA_Logo_Black.svg",
         wiki.allianceLogoUrl
       );
     }
