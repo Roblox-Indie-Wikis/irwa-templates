@@ -52,7 +52,7 @@ html.theme-dark .irwa-color-adaptive {
 
 /* Base Stuff */
 .irwa-navigation {
-  background-image: url("https://static.wikitide.net/urbanshadewiki/d/d1/IRWA_Logo.svg");
+  background-image: url("https://static.wikitide.net/commonswiki/e/e0/IRWA_Logo_Black.svg");
   background-size: contain;
   background-position: center; /* For vertical configuration, is overridden in horizontal configuration */
   background-repeat: no-repeat;
