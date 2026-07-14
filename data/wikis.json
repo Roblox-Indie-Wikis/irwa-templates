@@ -4,11 +4,11 @@
     "accessToken": "MIRAHEZE_ACCESS_TOKEN"
   },
   {
-    "apiUrl": "https://tagging.wiki/w/api.php",
+    "apiUrl": "https://utg.miraheze.org/w/api.php",
     "accessToken": "MIRAHEZE_ACCESS_TOKEN"
   },
   {
-    "apiUrl": "https://hybridcafe.wiki/w/api.php",
+    "apiUrl": "https://cafe.miraheze.org/w/api.php",
     "accessToken": "MIRAHEZE_ACCESS_TOKEN"
   },
   {
