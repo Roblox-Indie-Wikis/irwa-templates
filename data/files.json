@@ -54,5 +54,13 @@
   {
     "filePath": "templates/img/UMTWikiLogo.png",
     "wikiFileName": "UMTWikiLogo.png"
+  },
+  {
+    "filePath": "templates/img/ItemAsylumWikiLogo.svg",
+    "wikiFileName": "ItemAsylumWikiLogo.svg"
+  },
+  {
+    "filePath": "templates/img/BotsMusketsWikiLogo.png",
+    "wikiFileName": "BotsMusketsWikiLogo.png"
   }
 ]
