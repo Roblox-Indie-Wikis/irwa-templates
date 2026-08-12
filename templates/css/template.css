@@ -131,8 +131,11 @@ html.theme-dark .irwa-color-adaptive {
 /* Invert some icons in specific colour modes */
 
 .irwa-color-light .irwa-member.invert-member-icon img,
+.irwa-color-dark .irwa-member.invert-member-icon-dark img,
 html.skin-theme-clientpref-day .irwa-color-adaptive .irwa-member.invert-member-icon img,
-html.theme-light .irwa-color-adaptive .irwa-member.invert-member-icon img {
+html.theme-light .irwa-color-adaptive .irwa-member.invert-member-icon img,
+html.skin-theme-clientpref-night .irwa-color-adaptive .irwa-member.invert-member-icon-dark img,
+html.theme-dark .irwa-color-adaptive .irwa-member.invert-member-icon-dark img {
 	filter: invert( 1 );
 }
 
@@ -140,12 +143,6 @@ html.theme-light .irwa-color-adaptive .irwa-member.invert-member-icon img {
 	html.skin-theme-clientpref-os .irwa-color-adaptive .irwa-member.invert-member-icon img {
 		filter: invert( 1 );
 	}
-}
-
-.irwa-color-dark .irwa-member.invert-member-icon-dark img,
-html.skin-theme-clientpref-night .irwa-color-adaptive .irwa-member.invert-member-icon-dark img,
-html.theme-dark .irwa-color-adaptive .irwa-member.invert-member-icon-dark img {
-	filter: invert( 1 );
 }
 
 @media screen and ( prefers-color-scheme: dark ) {

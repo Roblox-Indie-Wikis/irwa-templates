@@ -2,5 +2,8 @@
   "extends": [
     "stylelint-config-wikimedia/support-basic",
     "stylelint-config-wikimedia/mediawiki"
-  ]
+  ],
+  "rules": {
+    "selector-class-pattern": "^(irwa|theme|skin|mw|invert)-"
+  }
 }
