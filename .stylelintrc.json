@@ -1,8 +1,6 @@
 {
-  "extends": "stylelint-config-standard",
-  "rules": {
-    "color-function-notation": "legacy",
-    "alpha-value-notation": "number",
-    "no-descending-specificity": null
-  }
+  "extends": [
+    "stylelint-config-wikimedia/support-basic",
+    "stylelint-config-wikimedia/mediawiki"
+  ]
 }
