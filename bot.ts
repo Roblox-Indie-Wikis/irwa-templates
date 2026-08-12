@@ -141,6 +141,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
     console.error(
         `Got ${filesResult.length} file entries, but expected ${files.length}!`
     );
+    success = false;
     return;
   }
   for (const result of filesResult) {
