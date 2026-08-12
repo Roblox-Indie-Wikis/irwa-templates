@@ -1,5 +1,5 @@
-import { Mwn } from "mwn";
-import { MwnMissingPageError } from "mwn/build/error";
+import {ApiPage, Mwn} from "mwn";
+import {MwnMissingPageError} from "mwn/build/error";
 import * as dotenv from "dotenv";
 import * as fs from "fs";
 import * as crypto from "crypto";
@@ -52,7 +52,7 @@ async function updateTemplateOnWiki(wiki: Wiki) {
     apiUrl: wiki.apiUrl,
     OAuth2AccessToken: accessToken,
     userAgent:
-      "RobloxWikiAllianceBot/1.0 (https://github.com/Roblox-Indie-Wikis/Templates)",
+        "RobloxWikiAllianceBot/1.0 (https://github.com/Roblox-Indie-Wikis/Templates)",
     defaultParams: {
       assert: "user",
     },
@@ -70,8 +70,8 @@ async function updateTemplateOnWiki(wiki: Wiki) {
     if (wiki.allianceLogoUrl) {
       // replace url on 3rd party wikis
       content = content.replace(
-        "https://static.wikitide.net/commonswiki/e/e0/IRWA_Logo_Black.svg",
-        wiki.allianceLogoUrl
+          "https://static.wikitide.net/commonswiki/e/e0/IRWA_Logo_Black.svg",
+          wiki.allianceLogoUrl
       );
     }
 
@@ -79,11 +79,11 @@ async function updateTemplateOnWiki(wiki: Wiki) {
       await bot.edit(template.pageName, async (rev) => {
         if (rev.content.trim() === content.trim()) {
           console.log(
-            `✅ ${template.pageName} on wiki ${wiki.apiUrl} is up to date!`
+              `✅ ${template.pageName} on wiki ${wiki.apiUrl} is up to date!`
           );
           return;
         }
-  
+
         console.log(`ℹ️ Updating ${template.pageName} on wiki ${wiki.apiUrl} ...`);
 
         if (isDryRun) {
@@ -112,37 +112,47 @@ async function updateTemplateOnWiki(wiki: Wiki) {
         } catch (error) {
           success = false;
           console.error(
-            `❌ Error creating ${template.pageName} on wiki ${wiki.apiUrl}:`,
-            error
+              `❌ Error creating ${template.pageName} on wiki ${wiki.apiUrl}:`,
+              error
           );
         }
         continue;
       }
       success = false;
       console.error(
-        `❌ Error updating ${template.pageName} on wiki ${wiki.apiUrl}:`,
-        error
+          `❌ Error updating ${template.pageName} on wiki ${wiki.apiUrl}:`,
+          error
       );
     }
   }
 
-  for (const file of files) {
-    const response = await bot.request({
-      action: "query",
-      prop: "imageinfo",
-      titles: `File:${file.wikiFileName}`,
-      iiprop: "sha1",
-      format: "json",
-    });
+  // Only send one request as the limit for bots is 500, which we probably won't exceed
+  const filesResponse = await bot.request({
+    action: "query",
+    prop: "imageinfo",
+    titles: files.map((f) => `File:${f.wikiFileName}`),
+    iiprop: "sha1",
+    format: "json",
+  });
 
-    /* eslint-disable  @typescript-eslint/no-explicit-any */
-    const result = Object.values(response.query.pages)[0] as any;
+  const filesResult = Object.values(filesResponse.query.pages) as ApiPage[];
 
+  if (filesResult.length !== files.length) {
+    console.error(
+        `Got ${filesResult.length} file entries, but expected ${files.length}!`
+    );
+    success = false;
+    return;
+  }
+  for (const result of filesResult) {
+    const file = files.find(
+        (f) => result.title.replace(/^File:/, '') === f.wikiFileName
+    );
     if (
-      !result.missing &&
-      result.imageinfo &&
-      result.imageinfo[0] &&
-      result.imageinfo[0].sha1 === file.fileHash
+        !result.missing &&
+        result.imageinfo &&
+        result.imageinfo[0] &&
+        result.imageinfo[0].sha1 === file.fileHash
     ) {
       console.log(
         `✅ File ${file.wikiFileName} on wiki ${wiki.apiUrl} is up to date!`
@@ -151,19 +161,19 @@ async function updateTemplateOnWiki(wiki: Wiki) {
     }
 
     console.log(`ℹ️ Updating file ${file.wikiFileName} on wiki ${wiki.apiUrl} ...`);
-    
+
     if (isDryRun) {
       console.log('🪲 (Skipped)');
       continue;
     }
 
     try {
-      await bot.upload(file.filePath, file.wikiFileName, "Update file");
+      await bot.upload(file.filePath, file.wikiFileName, 'Update file');
     } catch (error) {
       success = false;
       console.error(
-        `❌ Error updating file ${file.wikiFileName} on wiki ${wiki.apiUrl}:`,
-        error
+          `❌ Error updating file ${file.wikiFileName} on wiki ${wiki.apiUrl}:`,
+          error
       );
     }
   }
