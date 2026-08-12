@@ -3,6 +3,11 @@ name: Deploy Templates
 on:
   workflow_dispatch:
     inputs:
+      editSummary:
+        description: 'Edit summary'
+        default: 'Update templates'
+        required: true
+        type: string
       dryRun:
         description: 'Perform a dry run'
         default: true
@@ -24,7 +29,7 @@ jobs:
       - name: Run bot
         run: npx tsx bot.ts
         env:
-          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+          COMMIT_MESSAGE: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.editSummary || github.event.head_commit.message }}
           COMMIT_AUTHOR_NAME: ${{ github.event.head_commit.author.name }}
           MIRAHEZE_ACCESS_TOKEN: ${{ secrets.MIRAHEZE_ACCESS_TOKEN }}
           DOVEDALE_ACCESS_TOKEN: ${{ secrets.DOVEDALE_ACCESS_TOKEN }}
