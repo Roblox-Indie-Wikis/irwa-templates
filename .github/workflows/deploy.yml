@@ -10,7 +10,7 @@ on:
         type: string
       dryRun:
         description: 'Perform a dry run'
-        default: true
+        default: false
         required: true
         type: boolean
 
