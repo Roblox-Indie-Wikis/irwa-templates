@@ -2,7 +2,7 @@
   "dependencies": {
     "dotenv": "^16.4.7",
     "mwn": "^3.0.3",
-    "tsx": "^4.19.3"
+    "tsx": "^4.23.13"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
