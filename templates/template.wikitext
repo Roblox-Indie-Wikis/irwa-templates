@@ -23,7 +23,7 @@
 	<div class="irwa-member irwa-sewh">[[File:SewhWikiLogo.png|class=sewh-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Something Evil Will Happen Wiki|link=https://sewh.miraheze.org]] [https://sewh.miraheze.org Something Evil Will Happen]</div>
 	<div class="irwa-member irwa-umt">[[File:UMTWikiLogo.png|class=umt-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Ultimate Mining Tycoon Wiki|link=https://umt.miraheze.org]] [https://umt.miraheze.org Ultimate Mining Tycoon]</div>
 	<div class="irwa-member irwa-utg">[[File:UTGWikiLogo.png|class=utg-logo mw-no-invert|{{{imgsize|20x20px}}}|alt=Logo of the Untitled Tag Game Wiki|link=https://tagging.wiki]] [https://tagging.wiki Untitled Tag Game]</div>
-</div>
+</div>{{{extra-content|}}}
 </div></includeonly>
 <noinclude>
 This template is shared across all members of the [https://indierobloxwikis.org/ Independent Roblox Wiki Alliance] and provides links to all member wikis.
@@ -99,6 +99,11 @@ This theme tries to adapt to the color theme of the skin. If the template looks 
 				"light"
 			],
 			"default": "adaptive"
+		},
+		"extra-content": {
+			"label": "Extra content",
+			"description": "Extra content that will be appended to the end of the template.",
+			"type": "content"
 		}
 	},
 	"description": "This template provides links to all members wikis of the Indie Roblox Wiki Alliance (IRWA)."
